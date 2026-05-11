@@ -214,7 +214,7 @@ False-positive and false-negative CSVs per model are released in the repository.
 
 A pretrained Transformer (DistilBERT) is the right architectural choice for full-length-article fake-news detection (0.955 accuracy on FakeNewsNet, 100\% on 5{,}000+ character articles). Recurrent models with GloVe embeddings are competitive on short LIAR claims but collapse on long articles due to truncation. A simple architectural fix --- bidirectional + mean-pooling + gradient clipping --- rescues an otherwise-degenerate vanilla RNN. The full reproduction pipeline (data, splits, hyperparameters, multi-seed scripts) is open-sourced.
 
-\bibliographystyle{plain}
+\bibliographystyle{plainnat}
 \bibliography{references}
 
 \appendix
