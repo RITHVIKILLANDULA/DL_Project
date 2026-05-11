@@ -4,9 +4,26 @@ End-to-end deep learning pipeline for fake-news detection on:
 - **LIAR** — thousands of short labeled political statements
 - **FakeNewsNet (BuzzFeed subset)** — full-length labeled news articles
 
-The pipeline covers preprocessing, train/val/test splitting, RNN / LSTM / Transformer training, bootstrap-CI evaluation, per-dataset and length-bin error analysis, and a Streamlit demo.
+The pipeline covers preprocessing, train/val/test splitting, RNN / LSTM / Transformer training, bootstrap-CI evaluation, per-dataset and length-bin error analysis, and a Streamlit / Flask demo with model switching.
 
 See [reports/final_report.md](reports/final_report.md) for the writeup with numbers, ablations, limitations, and ethics discussion.
+
+## Demo (screenshots)
+
+The Flask app at `app/app_flask.py` exposes a one-click web UI: paste text, pick a model from the dropdown (DistilBERT, BiLSTM, or BiRNN), set the threshold, and get a real/fake prediction with probability.
+
+| | |
+|---|---|
+| DistilBERT on a clickbait headline → **FAKE 70.2%** | DistilBERT on a peer-reviewed claim → **REAL 61.0%** |
+| ![DistilBERT clickbait](report/demo_screenshots/demo_01_distilbert_clickbait.png) | ![DistilBERT real](report/demo_screenshots/demo_02_distilbert_real.png) |
+
+Model switching is functional — the same text produces different probabilities under each architecture (see report §4 for full quantitative comparison):
+
+| DistilBERT | BiLSTM | BiRNN |
+|---|---|---|
+| ![DistilBERT](report/demo_screenshots/demo_03_distilbert_misclassification.png) | ![BiLSTM](report/demo_screenshots/demo_04_lstm_same_text.png) | ![BiRNN](report/demo_screenshots/demo_05_rnn_same_text.png) |
+
+The "police confirm..." misclassification visible above is consistent with the error pattern documented in report §5: short declarative statements with strong-attribution verbs are over-predicted as fake by all three models because the training set is LIAR-dominated.
 
 ## 1) Project Structure
 

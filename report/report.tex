@@ -244,7 +244,46 @@ python scripts/run_multiseed_classic.py
 
 \section{Demo}\label{app:demo}
 
-Two demo interfaces are included in the repository: a Streamlit app (\texttt{app/streamlit\_app.py}) and a Flask app (\texttt{app/app\_flask.py}). Both load all three trained checkpoints (BiRNN, BiLSTM, DistilBERT), expose a model-switcher dropdown, and let the user paste arbitrary text to see the predicted class and probabilities.
+Two demo interfaces are included in the repository: a Streamlit app (\texttt{app/streamlit\_app.py}) and a Flask app (\texttt{app/app\_flask.py}). Both load all three trained checkpoints (BiRNN, BiLSTM, DistilBERT), expose a model-switcher dropdown, and let the user paste arbitrary text to see the predicted class and probabilities. Screenshots of the running Flask UI under each model are included in \texttt{report/demo\_screenshots/} in the repository (Figures~\ref{fig:demo-distilbert-clickbait}--\ref{fig:demo-rnn}).
+
+\begin{figure}[h]
+\centering
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{demo_screenshots/demo_01_distilbert_clickbait.png}
+\caption{DistilBERT correctly flags clickbait as FAKE (70.2\%).}
+\label{fig:demo-distilbert-clickbait}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{demo_screenshots/demo_02_distilbert_real.png}
+\caption{DistilBERT correctly labels a peer-reviewed claim as REAL (61.0\%).}
+\label{fig:demo-distilbert-real}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{minipage}[t]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{demo_screenshots/demo_03_distilbert_misclassification.png}
+\caption{DistilBERT}
+\label{fig:demo-distilbert-mc}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{demo_screenshots/demo_04_lstm_same_text.png}
+\caption{BiLSTM}
+\label{fig:demo-lstm}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{demo_screenshots/demo_05_rnn_same_text.png}
+\caption{BiRNN}
+\label{fig:demo-rnn}
+\end{minipage}
+\caption*{Model switching on the same input ``police confirm that the missing child has been found safe.'' All three models misclassify this short statement as fake (DistilBERT 83.9\%, BiLSTM 60.9\%, BiRNN 79.4\%) -- a failure mode discussed in \S5: short declarative statements with strong-attribution verbs are over-predicted as fake because the training mix is LIAR-dominated.}
+\end{figure}
 
 \section{LLM Usage Disclosure}
 
