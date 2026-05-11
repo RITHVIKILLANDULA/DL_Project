@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 from dataclasses import dataclass
 
@@ -24,7 +26,7 @@ def _compute_metrics(labels: list[int], preds: list[int], avg: str = "binary") -
     )
 
 
-def train_epoch(model, loader, optimizer, criterion, device) -> EpochMetrics:
+def train_epoch(model, loader, optimizer, criterion, device, grad_clip: float = 1.0) -> EpochMetrics:
     model.train()
     all_preds: list[int] = []
     all_labels: list[int] = []
@@ -38,6 +40,8 @@ def train_epoch(model, loader, optimizer, criterion, device) -> EpochMetrics:
 
         optimizer.zero_grad()
         loss.backward()
+        if grad_clip and grad_clip > 0:
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=grad_clip)
         optimizer.step()
 
         running_loss += loss.item() * labels.size(0)
@@ -69,3 +73,4 @@ def evaluate_epoch(model, loader, criterion, device) -> EpochMetrics:
 
     acc, prec, rec, f1 = _compute_metrics(all_labels, all_preds)
     return EpochMetrics(loss=running_loss / len(loader.dataset), accuracy=acc, precision=prec, recall=rec, f1=f1)
+

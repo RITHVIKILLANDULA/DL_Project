@@ -1,0 +1,237 @@
+text,true_label,predicted_label,prob_fake,source_dataset,length_bin
+"says president barack obama gives students the right to repay (federal) loans as a clear, fixed, low percentage of their income for up to 20 years.",0,1,0.555234968662262,liar,100-200
+jim renacci cheated on his income taxes and is a deadbeat citizen.,0,1,0.6672549247741699,liar,50-100
+"on the day that (the republican) state leader resigned in disgrace, a shred-it' truck rolled up to republican headquarters.",0,1,0.627371609210968,liar,100-200
+guantanamo detainees get taxpayer-paid-for prayer rugsthey had honey-glazed chicken and rice pilaf.,0,1,0.5455644726753235,liar,50-100
+on federal stimulus money for expanding rail service.,0,1,0.7315087914466858,liar,50-100
+a gay man who survived #orlando hate crime can still show up to work in fl tomorrow and have his boss fire him simply because he is gay.,0,1,0.6349223256111145,liar,100-200
+"top u.s. intelligence officials have toldevery member of congress, including the president, were about to be attacked in a serious way because (of) the threat emanating from syria and iraq.",0,1,0.5014485120773315,liar,100-200
+"taxpayers pay $18,000 a month for house speaker nancy pelosis district office in downtown san francisco.",0,1,0.6072865128517151,liar,100-200
+"says milwaukee county spent over $170,000 in salaries in 2010 for employees to participate in union activities such as collective bargaining.",0,1,0.5399501919746399,liar,100-200
+no family earns too much to qualify for oregon healthy kids program.,0,1,0.605978786945343,liar,50-100
+"obama ""won health care for 150,000 people.""",0,1,0.5244387984275818,liar,0-50
+"if you already have health insurance through your job, or medicare, or medicaid, or the va, nothing in this plan will require you or your employer to change the coverage or the doctor you have.",0,1,0.7068533897399902,liar,100-200
+says the states new collective bargaining law effectively eliminates police unions ability to negotiate.,0,1,0.5980611443519592,liar,100-200
+"the federal consumer financial protection bureau is collecting financial information, monitoring financial information of millions of americans without their knowledge and storing it for up to 10 years.",0,1,0.6331548094749451,liar,200-500
+"the stimulus includes ""$219,000 to study the sex lives of female college freshmen.""",0,1,0.6097061634063721,liar,50-100
+"over 12,000 school kids were arrested in florida. it makes florida the nations leader in that area.",0,1,0.5147804021835327,liar,50-100
+"the president won the youth vote 3 to1, but his numbers have dropped 20, 30 percent among the youth.",0,1,0.5351899266242981,liar,100-200
+"barack obama ""extended health care for wounded troops who'd been neglected.""",0,1,0.5189608335494995,liar,50-100
+tsa will accept drivers priv cards for id at the airport,0,1,0.63129723072052,liar,50-100
+hobby lobby provided this (birth control) coverage before they decided to drop it to file suit.,0,1,0.6390495300292969,liar,50-100
+the deal to raise the federal debt limit created the largest debt ceiling increase in americas history.,0,1,0.5142979025840759,liar,100-200
+iowas republican caucus stopped mattering years ago. it in no way determines the party nominee.,0,1,0.5104947090148926,liar,50-100
+"if youre a mexican, you get sent back. ... but if youre from a noncontiguous country like the central american countries then you can stay in the united states.",0,1,0.5169770121574402,liar,100-200
+"says the texas forest service planted 6,000 trees in the dallas/fort worth area before the super bowl for unknown reasons at an unknown cost.",0,1,0.5338419079780579,liar,100-200
+"quite frankly, it was during the bush years of spending, multiplied now by the obama years that we have this mess.",0,1,0.5002439618110657,liar,100-200
+on legalizing illegal immigrants.,0,1,0.7026861310005188,liar,0-50
+cobb county businesses have already been awarded contracts worth $250 million on construction of a new braves stadium.,0,1,0.5046419501304626,liar,100-200
+"the senate version of the economic stimulus package includes ""millions of dollars to world war ii filipino veterans in the philippines.""",0,1,0.5392817258834839,liar,100-200
+americas least-trusted news sources are also its most popular.,0,1,0.5420522093772888,liar,50-100
+"the governor is trying to take credit for recent actions taken by these companies. the problem is that for all three companies, the decision to move or stay in new jersey happened before chris christie became governor.",0,1,0.5017414093017578,liar,200-500
+"41,200 veterans in florida dont have health care because scott didnt expand medicaid.",0,1,0.5135684609413147,liar,50-100
+"there is no incontrovertible proof that speed, in and of itself, is the contributing factor to increasing (vehicular) fatalities.",0,1,0.503856360912323,liar,100-200
+says that the new financial services law requires 358 regulatory filings.,0,1,0.5051597952842712,liar,50-100
+"seniors with coverage under medicare advantage will give up ""more than their share"" because of health care reform",0,1,0.5674978494644165,liar,100-200
+we ... sold the state airplanes as i had promised.,0,1,0.5736056566238403,liar,50-100
+i saved the taxpayers $2-billion on a bogus air force boeing tanker deal where people went to jail.,0,1,0.6002850532531738,liar,50-100
+"the new arizona immigration law ""says that any police officer can stop anyone who appears to them to be reasonably suspicious of being an undocumented person.""",0,1,0.5422952175140381,liar,100-200
+says hillary clinton once wanted a wall on the mexican border.,0,1,0.5900611877441406,liar,50-100
+"not a single banker, a ceo from wall street, anyone from corporate america nobody, (there was) not one arrest of any of these people who brought down the economy in 2008.",0,1,0.5870495438575745,liar,100-200
+"two years ago providence alone spent $50,000 a year notifying the school department about residents in the states sex offender registry.",0,1,0.6038033366203308,liar,100-200
+"deer baiting, planned for block island by dem, is illegal in rhode island.",0,1,0.606269896030426,liar,50-100
+we need to pass a carbon tax to stop climate change. break up the wall street banks. and stop the government spying on innocent americans. cory booker doesnt support any of these ideas.,0,1,0.7591869235038757,liar,100-200
+"rhode island could tell you who has a camper, but we couldnt figure out who has a gun.",0,1,0.6420029997825623,liar,50-100
+the orlando shooter used a weapon of war.,0,1,0.5801243782043457,liar,0-50
+"kohls department stores in 2012 announced the creation of 3,000 new jobs.",0,1,0.5649210214614868,liar,50-100
+tax dodging costs developing countries $200 billion every year.,0,1,0.5199098587036133,liar,50-100
+"the day president obama took office, gasoline was $1.79 a gallon.",0,1,0.5477764010429382,liar,50-100
+says scott walkers listening sessions are invite-only and excluding the press.,0,1,0.6066540479660034,liar,50-100
+says crime is rising in manchester and has gone up 19 percent under mayor ted gatsas.,0,1,0.8362767100334167,liar,50-100
+laurie monnes anderson voted to let violent criminals out of jail early.,0,1,0.7454522252082825,liar,50-100
+"says president barack obama came into office very concerned about wiretappings but then he became president of the united states, he got all the briefings (and) he decided the balance is probably pretty appropriately struck.",0,1,0.6060603260993958,liar,200-500
+on the importance of judicial experience for supreme court nominees.,0,1,0.6473380923271179,liar,50-100
+the university of wisconsin system budget is the biggest it has ever been.,0,1,0.6219150424003601,liar,50-100
+dave aronberg was the first to demand that bp create a billion-dollar fund to pay for the devastation.,0,1,0.6547414660453796,liar,100-200
+says donald trump brings in hundreds of foreign workers to replace americans.,0,1,0.5056095719337463,liar,50-100
+they tried to give us $400 million to build a high-speed train that goes 39 miles an hour.,0,1,0.5746679306030273,liar,50-100
+on instances when abortions should be allowed.,0,1,0.6202163100242615,liar,0-50
+says delta air lines has once again broken a promise they made to me and to the people of memphis.,0,1,0.7076776027679443,liar,50-100
+"under the new health care law, if a landscaper wants to buy a new lawnmower, or a restaurant needs a new ice-maker, they have to report that to the feds.",0,1,0.6233522295951843,liar,100-200
+one out of every three automobile fatalities can be attributed to alcohol.,0,1,0.564283549785614,liar,50-100
+"if you are going to kill the families of terrorists, realize that theres something called the geneva convention were going to have to pull out of.",0,1,0.7876177430152893,liar,100-200
+obama's liberal fiscal agenda: over $874-billion in new spending.,0,1,0.649531364440918,liar,50-100
+says a state bill checks the spending habits of the milwaukee county board of supervisors by bringing it in line with other county boards around the state.,0,1,0.6081042885780334,liar,100-200
+on the iran nuclear deal,0,1,0.5924955010414124,liar,0-50
+"says goldman sachs ceo said congress would have to cut social security, medicare and medicaid and give huge tax breaks to the wealthy and the large corporations.",0,1,0.5829206109046936,liar,100-200
+the states that are doing better are the ones that have no state income tax.,0,1,0.5839007496833801,liar,50-100
+richard nixon released tax returns when he was under audit.,0,1,0.5089630484580994,liar,50-100
+says oil productions down where obamas in charge.,0,1,0.7758672833442688,liar,0-50
+there really isnt any kind of foreign policy network that is supporting and advising sen. sanders.,0,1,0.7327883839607239,liar,50-100
+"(newt gingrich) voted in favor of establishing the department of education, and yet he gets in a debate and says we should get rid of the department of education and send all the education issues back to the states.",0,1,0.5476117134094238,liar,200-500
+it cost us more to shut the government down than to keep it open.,0,1,0.5905890464782715,liar,50-100
+john faso took money from fossil fuel companies as they tried to take your land by eminent domain for a fracked gas pipeline.,0,1,0.5483242273330688,liar,100-200
+there are justice department policies against fbi director james comey discussing details of a federal investigation so close to an election.,0,1,0.8169939517974854,liar,100-200
+a democratic poll operation shows that fox news is the most trusted news operation in the country.,0,1,0.744533896446228,liar,50-100
+says studies show the average age of entry into prostitution is 12 to 14 years old.,0,1,0.7018335461616516,liar,50-100
+says every school will be negatively impacted if education stability fund is not tapped.,0,1,0.8098117709159851,liar,50-100
+says austin mayor lee leffingwell voted for a toll lane on mopac.,0,1,0.6014536619186401,liar,50-100
+says his sons were targeted on facebook by out-of-state protesters.,0,1,0.5730330348014832,liar,50-100
+speakers at the democratic national convention made zero mentions of the global terrorist threat posed by isis.,0,1,0.6699825525283813,liar,100-200
+on whether the state should privatize the ohio turnpike.,0,1,0.6393136978149414,liar,50-100
+on timing of right to work legislation,0,1,0.6500343084335327,liar,0-50
+"in oregon, students are skipping math class to learn about the bible.",0,1,0.570682942867279,liar,50-100
+"under a new law regulating abortions, even if youre raped, if you dont report it in the first 30 days, the republicans will force you to have an ultrasound.",0,1,0.7031486630439758,liar,100-200
+"this year, the overwhelming majority of new jobs are part time.",0,1,0.540485143661499,liar,50-100
+president obama is shrinking our military.,0,1,0.8152141571044922,liar,0-50
+"a texas police department bought an ad telling drug dealers, we can take your competition off the streets for free.",0,1,0.5927385091781616,liar,100-200
+our businesses have created jobs every single month since (obamacare) became law.,0,1,0.5397343039512634,liar,50-100
+"says if you try to hide marijuana in a hemp field, it becomes worthless. the thc goes away.",0,1,0.673195481300354,liar,50-100
+says about nsa data collection: every member in both parties who served on the intelligence committee voted in favor of this.,0,1,0.5366758108139038,liar,100-200
+says mark warner has supported harry reid down the line.,0,1,0.5418116450309753,liar,50-100
+the iran nuclear deal is putting billions of dollars back into a country thats the worlds largest supporter of terrorism. we are actually giving them the money to fund the terrorists that are killing us and our allies.,0,1,0.6438195109367371,liar,200-500
+"under obamacare, premiums have doubled and tripled in wisconsin.",0,1,0.5099447965621948,liar,50-100
+three thousand felons voted in rhode island in 2008.,0,1,0.540397047996521,liar,50-100
+mr. hurt would re-open that darn (medicare) doughnut hole.,0,1,0.6109257936477661,liar,50-100
+the federal health care law raises taxes and cuts medicare.,0,1,0.6636196970939636,liar,50-100
+"the health care bill will subsidize families of four that make more than $80,000 a year.",0,1,0.5292539000511169,liar,50-100
+"the health care bill ""dumps 15 to 18 million low-income americans into a medicaid program that none of us want to be a part of because 50 percent of doctors won't see new patients.""",0,1,0.5811377167701721,liar,100-200
+you cant build a christian church in saudi arabia.,0,1,0.6180111765861511,liar,50-100
+nearly 90% of travis county government races will be settled by the time of the democratic primary.,0,1,0.6257244944572449,liar,50-100
+fox news uses photo of a married couple promoting traditional marriage and the photo is actually of a same-sex couple.,0,1,0.7237752079963684,liar,100-200
+750 days since bill nelson the democrats in the senate passed a budget. how can this be justified?,0,1,0.578396737575531,liar,50-100
+the state budget has actually grown by $4.6 billion under gov. scott walkers actions.,0,1,0.5444669723510742,liar,50-100
+"when these [undocumented] students graduate from college, theyre still illegal aliens. they cannot get a job.",0,1,0.6036942601203918,liar,100-200
+there was even a time when (donald trump) didnt get an emmy for his tv program three years in a row and he started tweeting that the emmys were rigged.,0,1,0.5080310702323914,liar,100-200
+"says if congress doesnt avoid the sequester, tens of thousands of parents will have to scramble to find child care for their kids.",0,1,0.7285115122795105,liar,100-200
+"the baucus health care bill would require taxes on medical devices such as x-ray machines, female condoms, hiv tests and surgical needles.",0,1,0.5566372275352478,liar,100-200
+says david dewhurst explicitly advocated a guest worker program for all illegal immigrants.,0,1,0.5067999958992004,liar,50-100
+the best evidence is that you lose -- if you use marijuana as a teenager regularly -- eight iq points.,0,1,0.5709967613220215,liar,100-200
+the house zika bill limits access to birth control services needed to help curb the spread of the virus in puerto rico.,0,1,0.5603815317153931,liar,100-200
+"two weeks ago, a man entered the worlds busiest airport in atlanta, georgia, carrying a loaded ar-15 automatic weapon with an extended-capacity, 100-round magazine.",0,1,0.5198197960853577,liar,100-200
+says dan patrick proposed arizona-style show-me-your-papers legislation.,0,1,0.5243658423423767,liar,50-100
+"rhode islands voter identification law was pushed by a black democrat in the house, a black democrat in the senate. thats a fact.",0,1,0.5888038277626038,liar,100-200
+ronald reagan did amnesty.,0,1,0.6477638483047485,liar,0-50
+"after initially agreeing with republicans on an amount for zika funding, democrats derailed it.",0,1,0.5129054188728333,liar,50-100
+says we brought crime rate down by 30 percent when he was mayor of dallas.,0,1,0.5116789937019348,liar,50-100
+says hillary clinton has called for a radical 550 percent increase in syrian ... refugees . . . despite the fact that theres no way to screen these refugees in order to find out who they are or where they come from.,0,1,0.5198817253112793,liar,200-500
+there are polls showing right now that the american people for the most part think its a bad idea to provide tax cuts to the wealthy.,0,1,0.6364037990570068,liar,100-200
+u.s. rep. connie mack voted to raise his own pay several times.,0,1,0.577405571937561,liar,50-100
+about 85 percent of hotel guests who will pay the new $5 hotel/motel fee will be from outside georgia.,0,1,0.5194143056869507,liar,100-200
+state lawmakers are spending taxpayer money for parking that billionaire arthur blank could build while paying some state employees so little they are on food stamps.,0,1,0.6006707549095154,liar,100-200
+says pope francis took the name of a saint who basically reached out to muslims.,0,1,0.6980234384536743,liar,50-100
+the health care bill has six years of costs against 10 years of tax revenue.,0,1,0.555725634098053,liar,50-100
+"says that in curry county, if you make a 911 call youre likely to wait for an hour for a response.",0,1,0.5097473859786987,liar,50-100
+we are one of the most expensive [bus] rides in new england.,0,1,0.518031895160675,liar,50-100
+says barack obama and hillary clinton are responsible for leading america into a deal that will arm iran.,0,1,0.7972263693809509,liar,100-200
+"romney failed to take action against ""sanctuary cities"" in massachusetts.",0,1,0.5498093366622925,liar,50-100
+the pope and donald trump and tammy baldwin all agree on eliminating the carried-interest tax break.,0,1,0.6594722270965576,liar,100-200
+says businesses already pay most of the taxes.,0,1,0.606381893157959,liar,0-50
+thirty percent of [sheldon whitehouse campaign] money is coming from special interests.,0,1,0.7434036135673523,liar,50-100
+says scott walker gave $6 million in tax breaks to a corporation and told them that they can keep that money even if they lay off half their workforce.,0,1,0.6387032270431519,liar,100-200
+"there are many studies that indicate that the longer people get unemployment insurance, it provides some disincentive to work.",0,1,0.589527428150177,liar,100-200
+you've heard endlessly about waterboarding. it happened to three terrorists.,0,1,0.7549415230751038,liar,50-100
+"in april 2009 the democrats were in control, and the congressional (approval) rating was 40 percent.",0,1,0.6870290040969849,liar,100-200
+"says his promise of 250,000 new private sector jobs was a big goal.",0,1,0.5407042503356934,liar,50-100
+the oceans have become 30 percent more acidic.,0,1,0.5437790155410767,liar,0-50
+some of the men serving in the (afghan) armed forces have never driven a vehicle before.,0,1,0.5517013669013977,liar,50-100
+mike huckabee raised taxes on dog groomers!,0,1,0.6697549223899841,liar,0-50
+most of the newspapers that endorsed alex sink also endorsed barack obama.,0,1,0.588569164276123,liar,50-100
+says women care most about jobs and the economy,0,1,0.6854878067970276,liar,0-50
+says the central ohio human trafficking task force is the first task force of its kind in central ohio,0,1,0.5245456099510193,liar,100-200
+our community (tampa bay) is one of the 10 most threatened by the sea level rise in the world.,0,1,0.5333832502365112,liar,50-100
+"instead of fighting isis, (the saudis) have focused more on a campaign to oust iran-backed houthi rebels in yemen.",0,1,0.537674069404602,liar,100-200
+most ags dont go to court..,0,1,0.5420946478843689,liar,0-50
+says a 1915 referendum on womens right to vote went down in new jersey. and it took the legislature to pass it.,0,1,0.5772377252578735,liar,100-200
+president obama in november of last year wiped away (a program) that allows for shared fingerprinting for those who are behind bars so you know who is here legally and illegally.,0,1,0.6231652498245239,liar,100-200
+monarch butterflies are becoming extinct because of increased use of crops genetically modified to withstand pesticides.,0,1,0.559840977191925,liar,100-200
+attorney general eric holders own justice department precleared the voting changes in the 2011 law about early voting in florida.,0,1,0.5898377895355225,liar,100-200
+on support for gay marriage.,0,1,0.7139544486999512,liar,0-50
+"obamacare will provide coverage for abortions, despite the presidents commitment that it would not.",0,1,0.7083508968353271,liar,50-100
+women in barack obamas white house are earning less than men.,0,1,0.7328870892524719,liar,50-100
+says the new years day fiscal cliff deal reduces the deficit.,0,1,0.5981774926185608,liar,50-100
+more than 90 percent of the guns recovered in mexico come from the united states.,0,1,0.552098274230957,liar,50-100
+saysdonald trump called pregnant employees an inconvenience.,0,1,0.5535975694656372,liar,50-100
+deepwaters own testimony . . . is they said theyll create six jobs.,0,1,0.5855869054794312,liar,50-100
+"doctors, nurses, hospitals, even the pharmaceutical industry, (and) aarp say that health reform makes sense to do.",0,1,0.6583254933357239,liar,100-200
+"says apple ceo steve jobs told president obama that the company moved factories to china because it needed 30,000 engineers.",0,1,0.5406781435012817,liar,100-200
+says scott brown voted to give oil companies big tax breaks.,0,1,0.6129025220870972,liar,50-100
+cory gardner is sponsoring a bill to ban all abortions right now.,0,1,0.8056116104125977,liar,50-100
+"we understand that this heroin is primarily coming from mexico, over the border.",0,1,0.7335339784622192,liar,50-100
+says deborah ross supports the iran nuclear deal and the ransom it paid for hostages.,0,1,0.6905588507652283,liar,50-100
+"says the federal government could save $175,587 by eliminating a study of the connection between cocaine and risky sex habits of the japanese quail.",0,1,0.5256745219230652,liar,100-200
+were borrowing 20% of (the federal) budget.,0,1,0.5473624467849731,liar,0-50
+i don't think that rudy or fred or john mccain support the marriage amendment.,0,1,0.789061963558197,liar,50-100
+says gop congressional candidate scott jones wants to build a wall. he wants to round people up and deport folks.,0,1,0.5694225430488586,liar,100-200
+"after a federal inquiry corroborated hillary clinton on whitewater, the next day, there was nothing in the media about it.",0,1,0.6745671033859253,liar,100-200
+up to 80 percent of small businesses will be forced to give up their current plans due to new obamacare regulations.,0,1,0.6922531723976135,liar,100-200
+"requiring photo id would keep about 200,000 missourians from voting.",0,1,0.5120911598205566,liar,50-100
+"trade deals are negotiated in secret and, unlike corporate interests,politicians never invite the leaders of the afl-cio or steelworkers or the mine workers to come in and sit down in these meetings.",0,1,0.5063422918319702,liar,100-200
+were the only advanced democracy in the world that makes it harder for people to vote.,0,1,0.5976552367210388,liar,50-100
+barack obama ended up getting re-elected by the largest gender gap in the history of american elections.,0,1,0.5030027031898499,liar,100-200
+sharron angle voted to protect sex offenders.,0,1,0.6908974051475525,liar,0-50
+if you are a federally licensed gun dealer and your license is revoked because youve engaged in misconduct ... your entire inventory under prevailing law is deemed your personal collection. you then can sell it free from any background checks.,0,1,0.5282449126243591,liar,200-500
+"you dont see norway losing population, and its taxes are astronomical.",0,1,0.6448314189910889,liar,50-100
+"fences have not worked. the great wall of china, the berlin wall. that's not good among peoples, especially friends like the united states and mexico.",0,1,0.7395259141921997,liar,100-200
+"as a state senator in illinois, obama made sure women got equal pay for equal work.",0,1,0.5352790355682373,liar,50-100
+in malaysia many of the workers are indentured servants because their passports are taken away when they come into this country and are working in slave-like conditions.,0,1,0.5515468120574951,liar,100-200
+republican ideas on health care dont give people an option to even enroll in something that they can afford.,0,1,0.5933522582054138,liar,100-200
+"it is projected that 3.07 million people will use the train annually. keep in mind that amtraks acela train in washington d.c., boston, philadelphia, new york and baltimore only had 3.2 million riders in 2010.",0,1,0.5681115388870239,liar,200-500
+60 percent of people on food assistance are working.,0,1,0.7142877578735352,liar,50-100
+there are currently delays of up to six months in the processing of dna evidence at the state run crime lab.,0,1,0.628153383731842,liar,100-200
+says donald trumps only economic agenda is imposing massive taxes on the american people with a 40 percent tax hike of a giant tariff.,0,1,0.660092294216156,liar,100-200
+says carbon monoxide is still employed to euthanize dogs and cats in 29 texas animal shelters.,0,1,0.5291385650634766,liar,50-100
+president obama has said he is going to cut veterans benefits.,0,1,0.5136734843254089,liar,50-100
+says the high-speed rail project provides short-term jobs.,0,1,0.623318612575531,liar,50-100
+"in muslim countries, under the sharia, there is a death penalty for blaspheming mohammad.",0,1,0.5429379343986511,liar,50-100
+the united states gives $8 million a day to israel and gives that country a blank check.,0,1,0.514650821685791,liar,50-100
+says george lemieux was one of two republicans who voted for president barack obamas jobs bill.,0,1,0.5450273156166077,liar,50-100
+an amendment inserted by lawmakers into the state budget exempts scientific researchers from all state animal cruelty laws.,0,1,0.6154295206069946,liar,100-200
+the average family premium has increased by 29% under obama!,0,1,0.6331861019134521,liar,50-100
+"the radiation coming from the new tsa body scanners is equivalent to about three minutes worth of air travel by anybody, say, at 30,000 feet.",0,1,0.5146551728248596,liar,100-200
+on tax breaks for businesses,0,1,0.6478742957115173,liar,0-50
+says craig huey called planned parenthood a murder mill.,0,1,0.5317535996437073,liar,50-100
+online voter registration is a more secure way of doing voter registration.,0,1,0.5114623308181763,liar,50-100
+i still live in the same working-class neighborhood i grew up in.,0,1,0.5125367641448975,liar,50-100
+global surface temperatures have been flat for 16 years.,0,1,0.6081096529960632,liar,50-100
+"says new start, passed while clinton was secretary of state, is a treaty cutting russias nuclear arms.",0,1,0.6264245510101318,liar,100-200
+obamas job approval rating is up.,0,1,0.8791606426239014,liar,0-50
+over 97 percent of the scientific community believe that humans are contributing to climate change.,0,1,0.509626030921936,liar,50-100
+a republican bill that would change john doe criminal investigations is creating exceptions in the law for politicians.,0,1,0.5072929859161377,liar,100-200
+illegal immigration and the crime rate are as low as theyve been in decades.,0,1,0.5749657154083252,liar,50-100
+f: the grade given to florida for college affordability under jeb bushs leadership.,0,1,0.5346722602844238,liar,50-100
+"fifa pressured brazil into passing a so-called budweiser bill, allowing beer sales in soccer stadiums.",0,1,0.5643337368965149,liar,100-200
+people have a constitutional right to have semiautomatic rifles.,0,1,0.5983497500419617,liar,50-100
+we know that every 85 visitors create one florida job.,0,1,0.6748210191726685,liar,50-100
+"the federal government only ordered bp to pay ""to do one of those six segments"" of sand barriers for louisiana.",0,1,0.5030357837677002,liar,100-200
+crime is down in arizona.,0,1,0.6627448797225952,liar,0-50
+president obama is actually increasing bush-era defense spending by $21 billion in the new fiscal year.,0,1,0.7561144828796387,liar,100-200
+"floridas proposed amendment for medical marijuana would allow people who alleged minor ailments such as muscle spasms, neck pain, back pain and even menstrual cramps (to qualify) for government-sanctioned pot-smoking.",0,1,0.5097008347511292,liar,200-500
+russia and china absolutely said clearly they would not keep economic sanctions on iran if the united states walked away from the deal.,0,1,0.5794757604598999,liar,100-200
+"there are no rules governing the 2016 republican convention, the rules have not been set.",0,1,0.6112127900123596,liar,50-100
+romneycare was model for obamacare.,0,1,0.6657692790031433,liar,0-50
+"its a good sign for obamacare that in california, the proportion of kids who are signing up is the proportion of kids in the population.",0,1,0.7631434202194214,liar,100-200
+"you know, we spent $3-million to study the dna of bears in montana.",0,1,0.5443273186683655,liar,50-100
+says republicans want to cut education by 25 percent.,0,1,0.6157394051551819,liar,50-100
+"when president obama landed in cuba on air force one, no leader was there, nobody, to greet him -- perhaps an incident without precedent in the long and prestigious history of air force one.",0,1,0.5314186215400696,liar,100-200
+barack obamas recess appointment of richard cordray is precisely what then-sen. obama claimed would be the wrong thing to do.,0,1,0.5630732774734497,liar,100-200
+"you know, when this thing first hit, i signed a declaration of emergency for the six counties that were directly affected, impacted in the panhandle, then i extended that not long thereafter down into sarasota county.",0,1,0.5138034224510193,liar,200-500
+says potential gop u.s. senate candidate tommy thompson supported obamacare,0,1,0.6288135051727295,liar,50-100
+"47 - new provisions obamacare charges the irs with implementing, according to the government accountability office.",0,1,0.7601970434188843,liar,100-200
+took on the olympics and turned them around,0,1,0.5498347878456116,liar,0-50
+"says the health care reform bill was paid for, in part, by taking money from students and the student loan system.",0,1,0.6457082033157349,liar,100-200
+"congress shoveled $700 billion into the troubled assets relief program, $325 billion of which has been spent without purchasing any toxic assets.",0,1,0.5524114966392517,liar,100-200
+"the federal budget bill reauthorizes the overseas private investment corporation, which provides taxpayer dollars so that the four seasons hotel can build a resort in turkey.",0,1,0.5921987891197205,liar,100-200
+"statistics show that more people at this time telecommute than they ride carpools, mass transit, bicycle or walk.",0,1,0.5724330544471741,liar,100-200
+"when i was mayor of new york city, i encouraged adoptions. adoptions went up 65-70 percent. abortions went down 16 percent.",0,1,0.5085753202438354,liar,100-200
+the fbi is involved in an investigation about people in the rio grande valley who are using cocaine to buy votes.,0,1,0.746915340423584,liar,100-200
+the 2006 massachusetts health care law has added (only) about 1 percent to our state budget.,0,1,0.501108705997467,liar,50-100
+the first installment of health care reform ... will raise the deficit by $250 billion.,0,1,0.5540418028831482,liar,50-100
+the treaty of tripoli signed by president john adams was his outreach to muslims.,0,1,0.6281193494796753,liar,50-100
+bruce rauner is of record that he will fully support the trump candidacy. its documented. its available.,0,1,0.681779682636261,liar,100-200
+"if you like your health care plan, you can keep your health care plan.",0,1,0.5666760206222534,liar,50-100
+"every poll you see, the overwhelming majority of people want [e-verify].",0,1,0.67147296667099,liar,50-100
+"in virginia, people are going and getting marriage licenses who are 12 and 13, and 14 and 15 years old.",0,1,0.5504480004310608,liar,100-200
+zika mosquitoes cant catch me.,0,1,0.7243169546127319,liar,0-50
+says u.s. rep. steve southerland voted to keep the shutdown going.,0,1,0.7007439136505127,liar,50-100
+anyone can die of a toothache.,0,1,0.5413386225700378,liar,0-50

@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 from dataclasses import dataclass
 
@@ -19,3 +21,4 @@ def collect_error_slices(df: pd.DataFrame, y_true: list[int], y_pred: list[int],
     fp = tmp[(tmp["y_true"] == 0) & (tmp["y_pred"] == 1)].head(top_k)
     fn = tmp[(tmp["y_true"] == 1) & (tmp["y_pred"] == 0)].head(top_k)
     return ErrorAnalysisResult(false_positives=fp, false_negatives=fn)
+

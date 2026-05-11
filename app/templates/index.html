@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake News Detector</title>
+    <style>
+        :root{--bg1:#667eea;--bg2:#764ba2;--accent:#667eea}
+        *{box-sizing:border-box}
+        html,body{height:100%;margin:0}
+        body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 100%);padding:clamp(10px,2vw,22px);overflow-x:hidden;overflow-y:auto}
+        .shell{width:min(1320px,100%);margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,0.18);position:relative;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px;padding:24px 28px;align-items:start}
+        .left{min-width:0}
+        .header h1{margin:0;font-size:22px;color:#111}
+        .header p{margin:6px 0 18px;color:#555;font-size:13px}
+        textarea{width:100%;min-height:140px;padding:12px;border:1px solid #e6e9ef;border-radius:8px;font-size:14px}
+        .controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0}
+        .controls .slider{flex:1}
+        input[type=range]{width:100%}
+        button.primary{background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#fff;padding:12px 18px;border-radius:8px;border:none;font-weight:600;cursor:pointer;min-width:110px}
+        .result{display:none;margin-top:18px;padding:14px;border-radius:8px}
+        .result.real{background:#f0fdf4;border-left:5px solid #48bb78;color:#22543d}
+        .result.fake{background:#fff5f5;border-left:5px solid #f56565;color:#742a2a}
+        .metrics{display:flex;gap:8px;margin-top:10px}
+        .metric{background:rgba(255,255,255,0.9);padding:8px;border-radius:6px;text-align:center;min-width:90px}
+        .clean-text{margin-top:8px;background:#f7f9fc;padding:8px;border-radius:6px;font-size:13px;color:#444}
+        .explain{margin-top:10px}
+        .explain ul{margin:8px 0 0 18px;color:#444}
+        /* Right column */
+        .examples{position:sticky;top:16px;width:100%;background:#fafbfd;padding:12px;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.06);align-self:start}
+        .examples h3{margin:0 0 8px 0;font-size:13px}
+        .examples-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-height:240px;overflow:auto;padding-right:6px}
+        .example-item{background:#fff;padding:7px 8px;border-radius:6px;border-left:4px solid transparent;cursor:pointer;font-size:12px;color:#333;line-height:1.35}
+        .example-item.fake{border-left-color:#f56565}
+        .example-item.real{border-left-color:#48bb78}
+        .example-item:hover{background:#f0f4ff}
+        /* responsive */
+        @media (max-width:1024px){
+            .shell{padding:16px;grid-template-columns:1fr}
+            .left{max-width:100%}
+            .examples{position:static;width:100%;margin-top:8px}
+            .examples-list{grid-template-columns:1fr;max-height:220px}
+        }
+        @media (max-width:768px){
+            .shell{padding:14px;border-radius:10px;gap:16px}
+            textarea{min-height:120px}
+            .metrics{flex-wrap:wrap}
+            .examples-list{grid-template-columns:1fr 1fr}
+        }
+        @media (max-width:500px){
+            body{padding:clamp(8px,1vw,16px)}
+            .shell{padding:12px;gap:12px}
+            textarea{min-height:100px;font-size:13px}
+            .controls{gap:8px}
+            button.primary{padding:10px 14px;font-size:13px}
+            .examples h3{font-size:12px}
+            .example-item{font-size:11px;padding:6px 7px}
+        }
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <div class="left">
+            <div class="header">
+                <h1>🔍 Fake News Detector</h1>
+                <p>Interactive demo — click an example or paste text, adjust threshold, press Analyze.</p>
+            </div>
+
+            <form id="predictForm">
+                <label for="text">📝 Enter news text or statement</label>
+                <textarea id="text" placeholder="Paste a news article or statement here..."></textarea>
+
+                <div class="controls">
+                    <div>
+                        <label for="modelSelect" style="font-size:13px;color:#444">Model</label>
+                        <select id="modelSelect" style="padding:8px;border:1px solid #e6e9ef;border-radius:6px;font-size:13px">
+                            <option value="distilbert">DistilBERT (full-data)</option>
+                            <option value="lstm">BiLSTM + GloVe</option>
+                            <option value="rnn">BiRNN + GloVe</option>
+                        </select>
+                    </div>
+                    <div style="flex:1">
+                        <label for="threshold" style="font-size:13px;color:#444">🎚️ Detection Threshold <span id="thresholdValue">0.50</span></label>
+                        <input id="threshold" class="slider" type="range" min="0.1" max="0.9" step="0.01" value="0.50" />
+                    </div>
+                    <div>
+                        <button class="primary" id="predictBtn">Analyze Text</button>
+                    </div>
+                </div>
+
+                <div id="loading" style="display:none;margin-top:8px;color:var(--accent)">Analyzing…</div>
+                <div id="error" style="display:none;margin-top:8px;color:#b00020"></div>
+
+                <div id="result" class="result"></div>
+            </form>
+        </div>
+
+        <div class="examples">
+            <h3>💡 Try Examples</h3>
+            <div class="examples-list" id="examplesList">
+                <!-- Fake examples -->
+                <div class="example-item fake" data-text="jennifer lopez not engaged to alex rodriguez despite ring speculation">📌 Fake: Jennifer Lopez engagement rumor</div>
+                <div class="example-item fake" data-text="jennifer aniston casually dating again">📌 Fake: Jennifer Aniston dating gossip</div>
+                <div class="example-item fake" data-text="celebrities caught in scandal! shocking photos">📌 Fake: Celebrity scandal clickbait</div>
+                <div class="example-item fake" data-text="miracle cure for diabetes found in local herb, doctors stunned">📌 Fake: Miracle cure claim</div>
+                <div class="example-item fake" data-text="government to ban social media next week reports say">📌 Fake: Social media ban rumor</div>
+                <div class="example-item fake" data-text="scientists confirm aliens built the pyramids">📌 Fake: Alien conspiracy claim</div>
+                <div class="example-item fake" data-text="politician secretly arrested for corruption, insiders say">📌 Fake: Unverified political arrest</div>
+                <div class="example-item fake" data-text="new study shows chocolate causes weight loss, experts shocked">📌 Fake: Misleading study headline</div>
+                <div class="example-item fake" data-text="breaking: celebrity death hoax spreads online">📌 Fake: Death hoax</div>
+                <div class="example-item fake" data-text="you won a million dollars! click to claim">📌 Fake: Scam / clickbait</div>
+                <!-- Real examples -->
+                <div class="example-item real" data-text="avicii's funeral will be private, according to family">✅ Real: Avicii funeral announcement</div>
+                <div class="example-item real" data-text="kim cattrall says she's 'never been friends' with her 'sex and the city' co-stars">✅ Real: Kim Cattrall interview quote</div>
+                <div class="example-item real" data-text="the mayor announced a new housing initiative to support low-income families">✅ Real: Official announcement</div>
+                <div class="example-item real" data-text="the university released a statement confirming the scholarship recipients">✅ Real: University statement</div>
+                <div class="example-item real" data-text="the company confirmed quarterly earnings beat expectations in a press release">✅ Real: Company press release</div>
+                <div class="example-item real" data-text="police confirm that the missing child has been found safe">✅ Real: Police confirmation</div>
+                <div class="example-item real" data-text="official figures show unemployment fell by 0.5 percent last month">✅ Real: Statistical report</div>
+                <div class="example-item real" data-text="the health department recommends vaccination to prevent the outbreak">✅ Real: Health department guidance</div>
+                <div class="example-item real" data-text="researchers published peer-reviewed results in a reputable journal">✅ Real: Peer-reviewed research</div>
+                <div class="example-item real" data-text="the court issued a ruling in the high-profile case today">✅ Real: Court ruling announcement</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const textEl = document.getElementById('text');
+        const thresholdEl = document.getElementById('threshold');
+        const thresholdValue = document.getElementById('thresholdValue');
+        const predictBtn = document.getElementById('predictBtn');
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+        const result = document.getElementById('result');
+        const examplesList = document.getElementById('examplesList');
+
+        thresholdEl.addEventListener('input', ()=> thresholdValue.textContent = parseFloat(thresholdEl.value).toFixed(2));
+
+        // Click example
+        examplesList.addEventListener('click', (e)=>{
+            const item = e.target.closest('.example-item');
+            if(!item) return;
+            textEl.value = item.dataset.text;
+            runPrediction();
+        });
+
+        // Submit handler
+        predictBtn.addEventListener('click', (ev)=>{ ev.preventDefault(); runPrediction(); });
+
+        async function runPrediction(){
+            error.style.display='none';
+            const text = textEl.value && textEl.value.trim();
+            const threshold = parseFloat(thresholdEl.value);
+            if(!text){ showError('Please enter some text'); return; }
+            if(text.length < 5){ showError('Text too short (min 5 chars)'); return; }
+
+            predictBtn.disabled = true; loading.style.display='block'; result.style.display='none';
+            try{
+                const model = document.getElementById('modelSelect').value;
+                const res = await fetch('/api/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text,threshold,model})});
+                const data = await res.json();
+                if(!res.ok || !data.success){ throw new Error(data.error || 'Prediction failed'); }
+                showResult(data);
+            }catch(err){ showError(err.message || String(err)); }
+            finally{ predictBtn.disabled=false; loading.style.display='none'; }
+        }
+
+        function showError(msg){ error.textContent = '❌ '+msg; error.style.display='block'; }
+
+        function showResult(data){
+            const isFake = data.prediction === 'FAKE';
+            result.className = 'result '+(isFake? 'fake':'real');
+            const pReal = (data.p_real*100).toFixed(1)+'%';
+            const pFake = (data.p_fake*100).toFixed(1)+'%';
+            const conf = data.confidence_percent || Math.round((data.confidence||0)*100);
+
+            result.innerHTML = `
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                    <div style="font-weight:700;font-size:18px">${data.prediction}</div>
+                    <div style="font-size:13px;color:#666">Model: ${data.model||'distilbert'}</div>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><div style="font-size:11px;color:#666">P(REAL)</div><div style="font-weight:700">${pReal}</div></div>
+                    <div class="metric"><div style="font-size:11px;color:#666">P(FAKE)</div><div style="font-weight:700">${pFake}</div></div>
+                </div>
+                <div style="margin-top:8px;font-size:13px;color:#444">Confidence: ${conf}%</div>
+            `;
+
+            result.style.display='block';
+            result.scrollIntoView({behavior:'smooth',block:'nearest'});
+        }
+
+        // initial: bind example keyboard navigation
+        document.addEventListener('keydown', (e)=>{ if(e.key==='Enter' && (e.ctrlKey||e.metaKey)){ runPrediction(); } });
+    </script>
+</body>
+</html>

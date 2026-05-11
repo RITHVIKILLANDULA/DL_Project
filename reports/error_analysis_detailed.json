@@ -1,0 +1,472 @@
+{
+  "baseline_tfidf": {
+    "model": "baseline_tfidf",
+    "overall": {
+      "total": 1295,
+      "correct": 779,
+      "false_positives": {
+        "count": 276,
+        "mean_length": 170.0253623188406,
+        "by_source": {
+          "liar": 273,
+          "fakenewsnet": 3
+        }
+      },
+      "false_negatives": {
+        "count": 240,
+        "mean_length": 139.5125,
+        "by_source": {
+          "liar": 238,
+          "fakenewsnet": 2
+        }
+      }
+    },
+    "by_length_bin": {
+      "0-50": {
+        "n": 89,
+        "accuracy": 0.550561797752809,
+        "n_real": 36,
+        "n_fake": 53,
+        "fp": 20,
+        "fn": 20
+      },
+      "100-200": {
+        "n": 572,
+        "accuracy": 0.6171328671328671,
+        "n_real": 339,
+        "n_fake": 233,
+        "fp": 115,
+        "fn": 104
+      },
+      "200-500": {
+        "n": 67,
+        "accuracy": 0.6268656716417911,
+        "n_real": 41,
+        "n_fake": 26,
+        "fp": 19,
+        "fn": 6
+      },
+      "50-100": {
+        "n": 545,
+        "accuracy": 0.5834862385321101,
+        "n_real": 296,
+        "n_fake": 249,
+        "fp": 119,
+        "fn": 108
+      },
+      "500-5000": {
+        "n": 16,
+        "accuracy": 0.875,
+        "n_real": 6,
+        "n_fake": 10,
+        "fp": 1,
+        "fn": 1
+      },
+      ">=5000": {
+        "n": 6,
+        "accuracy": 0.5,
+        "n_real": 4,
+        "n_fake": 2,
+        "fp": 2,
+        "fn": 1
+      }
+    },
+    "by_source": {
+      "fakenewsnet": {
+        "n": 22,
+        "accuracy": 0.7727272727272727,
+        "n_real": 10,
+        "n_fake": 12,
+        "fp": 3,
+        "fn": 2
+      },
+      "liar": {
+        "n": 1273,
+        "accuracy": 0.598586017282011,
+        "n_real": 712,
+        "n_fake": 561,
+        "fp": 273,
+        "fn": 238
+      }
+    },
+    "classification_report": {
+      "real": {
+        "precision": 0.6501457725947521,
+        "recall": 0.6177285318559557,
+        "f1-score": 0.6335227272727273,
+        "support": 722.0
+      },
+      "fake": {
+        "precision": 0.5467980295566502,
+        "recall": 0.581151832460733,
+        "f1-score": 0.5634517766497462,
+        "support": 573.0
+      },
+      "accuracy": 0.6015444015444016,
+      "macro avg": {
+        "precision": 0.5984719010757011,
+        "recall": 0.5994401821583444,
+        "f1-score": 0.5984872519612368,
+        "support": 1295.0
+      },
+      "weighted avg": {
+        "precision": 0.6044173889956538,
+        "recall": 0.6015444015444016,
+        "f1-score": 0.60251836070364,
+        "support": 1295.0
+      }
+    }
+  },
+  "rnn": {
+    "model": "rnn",
+    "overall": {
+      "total": 1295,
+      "correct": 729,
+      "false_positives": {
+        "count": 436,
+        "mean_length": 218.38073394495413,
+        "by_source": {
+          "liar": 426,
+          "fakenewsnet": 10
+        }
+      },
+      "false_negatives": {
+        "count": 130,
+        "mean_length": 96.6076923076923,
+        "by_source": {
+          "liar": 130
+        }
+      }
+    },
+    "by_length_bin": {
+      "0-50": {
+        "n": 89,
+        "accuracy": 0.5842696629213483,
+        "n_real": 36,
+        "n_fake": 53,
+        "fp": 26,
+        "fn": 11
+      },
+      "100-200": {
+        "n": 572,
+        "accuracy": 0.5821678321678322,
+        "n_real": 339,
+        "n_fake": 233,
+        "fp": 194,
+        "fn": 45
+      },
+      "200-500": {
+        "n": 67,
+        "accuracy": 0.4626865671641791,
+        "n_real": 41,
+        "n_fake": 26,
+        "fp": 31,
+        "fn": 5
+      },
+      "50-100": {
+        "n": 545,
+        "accuracy": 0.5522935779816514,
+        "n_real": 296,
+        "n_fake": 249,
+        "fp": 175,
+        "fn": 69
+      },
+      "500-5000": {
+        "n": 16,
+        "accuracy": 0.625,
+        "n_real": 6,
+        "n_fake": 10,
+        "fp": 6,
+        "fn": 0
+      },
+      ">=5000": {
+        "n": 6,
+        "accuracy": 0.3333333333333333,
+        "n_real": 4,
+        "n_fake": 2,
+        "fp": 4,
+        "fn": 0
+      }
+    },
+    "by_source": {
+      "fakenewsnet": {
+        "n": 22,
+        "accuracy": 0.5454545454545454,
+        "n_real": 10,
+        "n_fake": 12,
+        "fp": 10,
+        "fn": 0
+      },
+      "liar": {
+        "n": 1273,
+        "accuracy": 0.5632364493322859,
+        "n_real": 712,
+        "n_fake": 561,
+        "fp": 426,
+        "fn": 130
+      }
+    },
+    "classification_report": {
+      "real": {
+        "precision": 0.6875,
+        "recall": 0.3961218836565097,
+        "f1-score": 0.5026362038664324,
+        "support": 722.0
+      },
+      "fake": {
+        "precision": 0.5039817974971559,
+        "recall": 0.7731239092495636,
+        "f1-score": 0.6101928374655647,
+        "support": 573.0
+      },
+      "accuracy": 0.5629343629343629,
+      "macro avg": {
+        "precision": 0.5957408987485779,
+        "recall": 0.5846228964530367,
+        "f1-score": 0.5564145206659985,
+        "support": 1295.0
+      },
+      "weighted avg": {
+        "precision": 0.6062985096261547,
+        "recall": 0.5629343629343629,
+        "f1-score": 0.5502268996597164,
+        "support": 1295.0
+      }
+    }
+  },
+  "lstm": {
+    "model": "lstm",
+    "overall": {
+      "total": 1295,
+      "correct": 807,
+      "false_positives": {
+        "count": 277,
+        "mean_length": 236.09386281588448,
+        "by_source": {
+          "liar": 269,
+          "fakenewsnet": 8
+        }
+      },
+      "false_negatives": {
+        "count": 211,
+        "mean_length": 150.8388625592417,
+        "by_source": {
+          "liar": 209,
+          "fakenewsnet": 2
+        }
+      }
+    },
+    "by_length_bin": {
+      "0-50": {
+        "n": 89,
+        "accuracy": 0.5955056179775281,
+        "n_real": 36,
+        "n_fake": 53,
+        "fp": 26,
+        "fn": 10
+      },
+      "100-200": {
+        "n": 572,
+        "accuracy": 0.6398601398601399,
+        "n_real": 339,
+        "n_fake": 233,
+        "fp": 111,
+        "fn": 95
+      },
+      "200-500": {
+        "n": 67,
+        "accuracy": 0.6567164179104478,
+        "n_real": 41,
+        "n_fake": 26,
+        "fp": 11,
+        "fn": 12
+      },
+      "50-100": {
+        "n": 545,
+        "accuracy": 0.6091743119266055,
+        "n_real": 296,
+        "n_fake": 249,
+        "fp": 121,
+        "fn": 92
+      },
+      "500-5000": {
+        "n": 16,
+        "accuracy": 0.625,
+        "n_real": 6,
+        "n_fake": 10,
+        "fp": 5,
+        "fn": 1
+      },
+      ">=5000": {
+        "n": 6,
+        "accuracy": 0.3333333333333333,
+        "n_real": 4,
+        "n_fake": 2,
+        "fp": 3,
+        "fn": 1
+      }
+    },
+    "by_source": {
+      "fakenewsnet": {
+        "n": 22,
+        "accuracy": 0.5454545454545454,
+        "n_real": 10,
+        "n_fake": 12,
+        "fp": 8,
+        "fn": 2
+      },
+      "liar": {
+        "n": 1273,
+        "accuracy": 0.624509033778476,
+        "n_real": 712,
+        "n_fake": 561,
+        "fp": 269,
+        "fn": 209
+      }
+    },
+    "classification_report": {
+      "real": {
+        "precision": 0.6783536585365854,
+        "recall": 0.6163434903047091,
+        "f1-score": 0.6458635703918723,
+        "support": 722.0
+      },
+      "fake": {
+        "precision": 0.5665101721439749,
+        "recall": 0.631762652705061,
+        "f1-score": 0.5973597359735974,
+        "support": 573.0
+      },
+      "accuracy": 0.6231660231660232,
+      "macro avg": {
+        "precision": 0.6224319153402802,
+        "recall": 0.6240530715048851,
+        "f1-score": 0.6216116531827348,
+        "support": 1295.0
+      },
+      "weighted avg": {
+        "precision": 0.6288661545188512,
+        "recall": 0.6231660231660232,
+        "f1-score": 0.6244020282129753,
+        "support": 1295.0
+      }
+    }
+  },
+  "transformer": {
+    "model": "transformer",
+    "overall": {
+      "total": 1295,
+      "correct": 832,
+      "false_positives": {
+        "count": 236,
+        "mean_length": 98.38559322033899,
+        "by_source": {
+          "liar": 236
+        }
+      },
+      "false_negatives": {
+        "count": 227,
+        "mean_length": 123.94273127753304,
+        "by_source": {
+          "liar": 226,
+          "fakenewsnet": 1
+        }
+      }
+    },
+    "by_length_bin": {
+      "0-50": {
+        "n": 89,
+        "accuracy": 0.6292134831460674,
+        "n_real": 36,
+        "n_fake": 53,
+        "fp": 24,
+        "fn": 9
+      },
+      "100-200": {
+        "n": 572,
+        "accuracy": 0.6625874125874126,
+        "n_real": 339,
+        "n_fake": 233,
+        "fp": 89,
+        "fn": 104
+      },
+      "200-500": {
+        "n": 67,
+        "accuracy": 0.6417910447761194,
+        "n_real": 41,
+        "n_fake": 26,
+        "fp": 10,
+        "fn": 14
+      },
+      "50-100": {
+        "n": 545,
+        "accuracy": 0.6110091743119266,
+        "n_real": 296,
+        "n_fake": 249,
+        "fp": 113,
+        "fn": 99
+      },
+      "500-5000": {
+        "n": 16,
+        "accuracy": 0.9375,
+        "n_real": 6,
+        "n_fake": 10,
+        "fp": 0,
+        "fn": 1
+      },
+      ">=5000": {
+        "n": 6,
+        "accuracy": 1.0,
+        "n_real": 4,
+        "n_fake": 2,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "by_source": {
+      "fakenewsnet": {
+        "n": 22,
+        "accuracy": 0.9545454545454546,
+        "n_real": 10,
+        "n_fake": 12,
+        "fp": 0,
+        "fn": 1
+      },
+      "liar": {
+        "n": 1273,
+        "accuracy": 0.6370777690494894,
+        "n_real": 712,
+        "n_fake": 561,
+        "fp": 236,
+        "fn": 226
+      }
+    },
+    "classification_report": {
+      "real": {
+        "precision": 0.6816269284712483,
+        "recall": 0.6731301939058172,
+        "f1-score": 0.6773519163763067,
+        "support": 722.0
+      },
+      "fake": {
+        "precision": 0.5945017182130584,
+        "recall": 0.6038394415357766,
+        "f1-score": 0.5991341991341992,
+        "support": 573.0
+      },
+      "accuracy": 0.6424710424710425,
+      "macro avg": {
+        "precision": 0.6380643233421534,
+        "recall": 0.6384848177207969,
+        "f1-score": 0.6382430577552529,
+        "support": 1295.0
+      },
+      "weighted avg": {
+        "precision": 0.6430765458627982,
+        "recall": 0.6424710424710425,
+        "f1-score": 0.6427428414884861,
+        "support": 1295.0
+      }
+    }
+  }
+}

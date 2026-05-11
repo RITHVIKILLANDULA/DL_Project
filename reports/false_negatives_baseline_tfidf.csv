@@ -1,0 +1,241 @@
+text,true_label,predicted_label,prob_real,prob_fake,source_dataset,length_bin
+joe garcia raised utility rates on families.,1,0,0.6563712159333597,0.3436287840666404,liar,0-50
+were the worst state in the country at moving people from welfare to work.,1,0,0.665876001040524,0.334123998959476,liar,50-100
+we are experiencing the worst economic recovery america has ever had.,1,0,0.563566320789141,0.4364336792108589,liar,50-100
+"small businesses that have $250,000 in gross sales for the business. theyre the ones that are looking at massive tax increases.",1,0,0.5002484973995747,0.4997515026004253,liar,100-200
+gov. mcdonnells proposed budget is cutting public education.,1,0,0.523087059454918,0.4769129405450821,liar,50-100
+"says that in 2007, oregon ranked 25th -- or 7th from the bottom -- in percentage of children with untreated decay compared to 32 other states with similar data.",1,0,0.6914808903512661,0.3085191096487339,liar,100-200
+"at a minimum, 40 percent of those who view child pornography end up molesting children as a result.",1,0,0.6639743863836649,0.336025613616335,liar,50-100
+"because gov. chris christie vetoed a 30-bill job creation package, new jersey ranks 50th in the nation in job creation.",1,0,0.7488992139793923,0.2511007860206077,liar,100-200
+every republican senate candidate has now announced whether or not they support the senate taking up the supreme court vacancyexcept for congressman heck.,1,0,0.5376104594248148,0.4623895405751853,liar,100-200
+i never considered myself a maverick.,1,0,0.5912316874637185,0.4087683125362815,liar,0-50
+"toledo is fourth in the nation behind much bigger cities miami, las vegas, portland in number of human trafficking arrests and rescues.",1,0,0.5390169290161562,0.4609830709838438,liar,100-200
+says her representation of an ex-boyfriend who was then my friend in a family law case is something that lawyers do on a regular basis.,1,0,0.5298143714968073,0.4701856285031927,liar,100-200
+clackamas county commissioners approved a re-negotiated agreement to lower the countys contribution to trimets portland-milwaukie light rail project to $19.9 million from $25 million.,1,0,0.5942011840733629,0.4057988159266371,liar,100-200
+the 2010 dream act failed despite strong bipartisan support.,1,0,0.7284992429808725,0.2715007570191274,liar,50-100
+obamacare will drive 2.5 million americans out of the workforce.,1,0,0.6041676162572776,0.3958323837427224,liar,50-100
+"everyone on californias roads is properly licensed, tested and insured.",1,0,0.6359384217715113,0.3640615782284887,liar,50-100
+roy blunt voted to raise his own pay 12 times while in congress.,1,0,0.6002638051517266,0.3997361948482734,liar,50-100
+"bob menendez just voted to increase the governments debt ceiling to $1.9 trillion! in his 19 years in congress, menendez has helped overspend america over $15 trillion into debt.",1,0,0.6970516051914899,0.3029483948085101,liar,100-200
+"says epa regulation of greenhouse gases will endanger 575 texas dairy facilities, 58 swine operations, 1,300 corn farms and 28,000 beef cattle operations.",1,0,0.5281192119486824,0.4718807880513176,liar,100-200
+says oregon is one of only three states that allow the use of gillnets on inland waters.,1,0,0.6085298455049959,0.391470154495004,liar,50-100
+the florida department of agricultures website freshfromflorida.com can be used to get a permit to carry a loaded hidden gun without ever leaving your house.,1,0,0.5218108009244944,0.4781891990755056,liar,100-200
+"in 2001 and 02 . . . we had the pension system funded at (the)100% level in that year, and we did for two years at that point.",1,0,0.767480121704369,0.2325198782956309,liar,100-200
+"under president george w. bush, ""the national debt went from $5 trillion to $12 trillion.""",1,0,0.7465852756589593,0.2534147243410407,liar,50-100
+"a cashier earning $20,000 per year pays the same (virginia) income tax rate as a hedge fund manager earning $20 million per year.",1,0,0.5777146151975798,0.4222853848024201,liar,100-200
+says jeb bush extended early voting after seeing long lines.,1,0,0.633539449831154,0.366460550168846,liar,50-100
+says new jersey has fewer jobs since gov. chris christie took office.,1,0,0.5181487274959096,0.4818512725040905,liar,50-100
+"for my energy plan, my economic plan, and the other proposals you'll hear tonight, i've offered spending cuts above and beyond their cost.",1,0,0.5592073620674675,0.4407926379325325,liar,100-200
+the fed created $15 trillion in the bailout process and $5 trillion went overseas.,1,0,0.6169597255337003,0.3830402744662997,liar,50-100
+oregon is the only state out of the 50 states in the usa that continues to pay 100% of the medical benefits for its employees and their families.,1,0,0.8208585519556719,0.1791414480443281,liar,100-200
+says ted cruz just flip-flopped about the president needing to be u.s.-born.,1,0,0.6702402398832823,0.3297597601167177,liar,50-100
+"today, you cant rely on (the retirement fund for public employees), its not funded.",1,0,0.5462938069760137,0.4537061930239863,liar,50-100
+the five guantanamo detainees swapped for bowe bergdahl are right now back on the battlefield.,1,0,0.5744141031699708,0.4255858968300293,liar,50-100
+democrats failed to flip the wisconsin state senate because recall elections were in the deepest red districts in the state.,1,0,0.511840778632039,0.4881592213679609,liar,100-200
+"7k shares share this story last night, the city of charlotte was rocked with protests for a second straight night as massive crowds protested the police killing of kenneth l. scott. during the protests, a civilian was shot in the head and critically injured. the police quickly told the media that the shooter was also a civilian, but a number of eyewitness reports seem to indicate that the police are lying – and that the shot came from law enforcement. one key eye witness report emerged from charlotte on twitter, along with a graphic photo of the bloody aftermath and a haunting statement from todd zimmer, who claims to have assisted in the emergency response: “i didn’t want to post about this, but my city is lying about what happened tonight. let the record show.” my friend @neutralized was on the ground in charlotte. he saw the shooting. here's his account. pic.twitter.com/h5cqxran37 — max berger (@maxberger) september 22, 2016 we interviewed kahran meyer, who is a north carolina criminal defense lawyer and a key eye witness on the scene. the 29-year-old published this tweet just an hour after witnessing the shots and noticing that the weapons discharge did not sound like a typical firearm: i watched a man die tonight with my own two eyes. it was not by a civilian. i don't care what cnn tells you. i was right fucking there. — black matlock (@kahranatlaw) september 22, 2016 “i didn’t realize that i was standing next to someone from cnn at the time. it started when everybody met at the park and marched from there down a couple of city blocks, when somebody said let’s march to the police station. it was peaceful, people had signs that said “hands up, don’t shoot,” kahran meyers told me at 1:50am tonight. “the protest then marched to college street and trade street in front of the omni hotel. at that time, police were not at all directing traffic, just keeping the peace,” meyer told me almost breathlessly, “i’ve been told that the idea was to walk into the omni and hold our hands up [in protest] and chant ‘hands up, don’t shoot’ and there was a crowd of roughly 1,000 people. we wanted to demonstrate to the upper class, the bourgeoisie that there is a problem.” “after leaving ‘the epicenter,’ police made a human barrier to block a return to the main square, so the crowd was facing the hotel. at that point, all of the protests were completely peaceful – and that’s when the riot police arrived. i swear to god, you could feel the temperature go up by 10 degrees.” meyers had a brief interaction with one of the riot officers at that point, and asked them whose idea it was to send out police in heavy armor. the charlotte officer coyly nodded his head upward as if to indicate brass. meyers told him that it was an unnecessary escalation and he replied, “oh, absolutely.” five minutes later, a protester lay near death in a pool of blood in the street. “it wasn’t a gunshot,” she told us. “it was much louder. it wasn’t a civilian injury. the way people scattered. no way. at least a dozen people exclaimed loudly ‘they just shot him’ and people in the crowd were familiar with him [the protester shot by police]. at that point, the peaceful protesters who hadn’t already left, exited.” at that moment, meyers says that charlotte-mecklenberg police then read the riot act to the protesters. as she made it to the next block, police opened up with teargas from two directions into the already retreating crowd of peaceful protesters. it took meyers fifteen minutes to leave the scene, and as she was departing she spotted a news crew reviewing live video, it was a split-screen. according to meyer, that videographer was from cnn and had been standing next to the lawyer, and when reunited said it was ‘entirely too loud for a gunshot too. it was so loud it shook my tripod and all of my equipment.’ cnn reports, “police say the person was shot by a civilian.” the city of charlotte began spinning the protester’s grave injuries immediately on twitter: alert: fatal shot uptown was civilian on civilian. @cmpd did not fire shot. — city of charlotte (@cltgov) september 22, 2016 two additional eye witness reports have emerged on twitter refute the charlotte police’s claim that a civilian shot and severely injured a protester. the first is from the charlotte clergy coalition for justice, who issued a press release of sorts through a widely followed palestinian rights activist. “i saw the man go down on the pavement,” said minister steve knight of missiongathering christian church in charlotte whose written statement points the finger squarely at charlotte-meckenberg police for the shooting, “it was an ambush. the victim was shot while he stood between two ministers, and we believe he was shot by police.” #charlotte clergy question media & police accounts of tonight's shooting of protester. #charlotteprotest #keithlamontscott pic.twitter.com/tlvowveyav — linda sarsour (@lsarsour) september 22, 2016 lastly, a man named eddie thomas posted on facebook – which was also shared via twitter – that, “within 5 mins (no exaggeration a dude lay bleeding on the ground, eye rolling in the bakc of his head. he got shot with something, maybe a rubber bullet. i yelled at the bike cops for help and they did nothing.” when african-americans attempt to express their frustration and anger and the violence inflicted upon them by the state, the state responds the only way it knows how – with more violence. original story by grant stern at pinac news: “witness: charlotte riot police did shoot protester, deny involvement blaming civilians“ add your name to millions demanding that congress take action on the president’s crimes. impeach donald trump!",1,0,0.5773672723027166,0.4226327276972834,fakenewsnet,>=5000
+says his twitter account has 1.3 million followers.,1,0,0.5060237425953236,0.4939762574046765,liar,50-100
+new food safety legislation will regulate backyard gardening.,1,0,0.5239954360372923,0.4760045639627078,liar,50-100
+the president gave the (auto) companies to the uaw.,1,0,0.6423379047997758,0.3576620952002242,liar,50-100
+a scott rothstein victim says that he was swindled by charlie crist.,1,0,0.5378951015896273,0.4621048984103727,liar,50-100
+"says that in 41 states, government workers are better paid than the taxpayers who support them.",1,0,0.5562037320690973,0.4437962679309027,liar,50-100
+every major newspaper in texas calls david dewhurst a moderate.,1,0,0.5979600508495835,0.4020399491504166,liar,50-100
+"says markkirk called for the mass arrest of 18,000 african americans andwas apparently fine with trumps #stilltooracist call for mass deportation.",1,0,0.5808649672025947,0.4191350327974052,liar,100-200
+"there are more atheists in the country right now than jews, muslims, hindus and buddhists combined and doubled.",1,0,0.5139650238103692,0.4860349761896308,liar,100-200
+a lot of student loans are already refinanced by the federal government.,1,0,0.598261586215427,0.401738413784573,liar,50-100
+exposure to the electromagnetic fields from power lines has been associated with childhood leukemia and other diseases.,1,0,0.5711176239208458,0.4288823760791542,liar,100-200
+"you cant get on an airplane, but more than 2,000 people on that list have been able to buy a gun.",1,0,0.6873248520288497,0.3126751479711502,liar,50-100
+we spend half a trillion dollars a year in tax preparation.,1,0,0.7796171014504145,0.2203828985495854,liar,50-100
+says hillary clinton filibustered legislation to reform fannie mae and freddie mac.,1,0,0.5113767792579973,0.4886232207420027,liar,50-100
+"today in america, between 40 and 50 percent of all african-american babies, virtually 1-in-2, are killed before they are born.",1,0,0.8728373095656583,0.1271626904343417,liar,100-200
+gov. charlie crist sought for and got approved the automatic restoration of felon rights for nonviolent offenders for the first time in florida history.,1,0,0.5416715285242023,0.4583284714757977,liar,100-200
+i never supported a state income tax for texas.,1,0,0.5916438545258444,0.4083561454741555,liar,0-50
+some city of atlanta employees have not had raises in eight years.,1,0,0.5257380616597216,0.4742619383402784,liar,50-100
+there were 36 states where republicans who were in charge refused to implement a state (health insurance) exchange.,1,0,0.6192979368278397,0.3807020631721602,liar,100-200
+people who wash cars at home will use approximately 80 percent more water than they do in a car wash.,1,0,0.6412027633819041,0.3587972366180959,liar,100-200
+this is the first time in the history that weve had the raising of a debt limit also with spending cuts.,1,0,0.7914599773001965,0.2085400226998035,liar,100-200
+"blue cross new $90-million providence headquarters ""was outfitted with $25 million in decor.""",1,0,0.5466413458937016,0.4533586541062984,liar,50-100
+four members of the rhode island general assembly went to vote in 2010 and were told they had already voted.,1,0,0.5218252709275075,0.4781747290724925,liar,100-200
+says mitt romney asked for a waiver from federal welfare rules.,1,0,0.6163163720147118,0.3836836279852882,liar,50-100
+"in the 513 days between trayvon dying, and todays verdict, 11,106 african-americans have been murdered by other african-americans.",1,0,0.7037999076265712,0.2962000923734288,liar,100-200
+"says ohio gov. john kasich got lucky with a thing called fracking, which is why ohio is doing well.",1,0,0.7040244339443725,0.2959755660556274,liar,50-100
+the senate proposal to restore emergency unemployment benefits for five months was fully paid for.,1,0,0.6536067371009738,0.3463932628990261,liar,50-100
+slim jims just recently cost 99 cents but now cost $2.69.,1,0,0.6159764414685606,0.3840235585314394,liar,50-100
+says salaries and benefits for wisconsin state employee comprised 8.5 percent of the 2009-2011 state budget.,1,0,0.6172267057060996,0.3827732942939004,liar,100-200
+on choosing a texas house speaker,1,0,0.6688114937598703,0.3311885062401297,liar,0-50
+"gov. romney himself, with 28 other republican governors, supported policies that would have eliminated the time limits in the welfare reform law and allowed people to stay on welfare forever.",1,0,0.6498257975429866,0.3501742024570133,liar,100-200
+"when george bush became president of the united states, 17 million people were in poverty. when he left, 30 million people were in poverty.",1,0,0.7136441238564688,0.2863558761435312,liar,100-200
+"john mccain, ""one of the richest people in a senate filled with millionaires,"" says the solution to the housing crisis is for people to get a ""second job"" and ""skip their vacations.""",1,0,0.8344597996449428,0.1655402003550573,liar,100-200
+said his mother had to fight with health insurance companies for treatment because of a pre-existing condition.,1,0,0.5001339705124723,0.4998660294875277,liar,100-200
+"hillary's baby bond proposal would give $5,000 to each of the 4-million babies born in the u.s. each year, totaling $20-billion per year, multiplied by four years = $80-billion.",1,0,0.7386632351554576,0.2613367648445424,liar,100-200
+says that 9 million to 50 million undocumented immigrants live in the united states.,1,0,0.7687438221401316,0.2312561778598684,liar,50-100
+sen. barbara boxer voted against immigration reform to permit (hispanic immigrants) people to come here legally to work.,1,0,0.5614222614937134,0.4385777385062865,liar,100-200
+florida has experienced positive job growth for 39 consecutive months.,1,0,0.7725091720886599,0.2274908279113401,liar,50-100
+"in early voting in miami-dade county, there is a trickle of two or three people a day at a very high cost to keep those public libraries and polls open.",1,0,0.6103304963406981,0.3896695036593018,liar,100-200
+many just call him lyin ted. ... histv ad about john kasich? lie! stations had to pull it off the air.,1,0,0.5437034854553624,0.4562965145446375,liar,100-200
+a yougov.com poll shows 71 percent of obama voters regret voting for him.,1,0,0.613935413813789,0.386064586186211,liar,50-100
+"john mccain said ""he wouldn't even sit down with the government of spain, a nato ally that has troops in afghanistan with us now.""",1,0,0.5250698656741095,0.4749301343258905,liar,100-200
+"with 320,000 net ohio manufacturing jobs lost, (sen. rob) portman calls nafta a proven success.",1,0,0.6251205809757905,0.3748794190242094,liar,50-100
+"the 90 percent statistic ofsupporting background checks, thats been debunked.",1,0,0.7926862853958362,0.2073137146041638,liar,50-100
+we spend less on defense today as % of gdp than at any time since pearl harbor.,1,0,0.7733908041741172,0.2266091958258827,liar,50-100
+"says mitt romney was clear that he would not provide government assistance to the u.s. auto companies, even if they went through bankruptcy.",1,0,0.6063061596229045,0.3936938403770955,liar,100-200
+says florida had five sanctuary cities while jeb bush was governor.,1,0,0.7303155524579235,0.2696844475420766,liar,50-100
+"on how he measures his promise to create 700,000 private-sector jobs in seven years.",1,0,0.5744623432306835,0.4255376567693165,liar,50-100
+president obama has the lowest public approval ratings of any president in modern times.,1,0,0.5602385568324283,0.4397614431675717,liar,50-100
+"says the united states has treaties with apparently 69 countries where we are obligated to defend their borders. and these were treaties that were executive treaties, not authorized by congress.",1,0,0.6169916794441459,0.3830083205558541,liar,100-200
+the southern baptist convention voted 13 years ago that women were inferior and had to be subservient to their husbands.,1,0,0.5018139495302026,0.4981860504697973,liar,100-200
+on raising taxes.,1,0,0.55694962987849,0.44305037012151,liar,0-50
+the platform of the republican party says deport everybody and to hell with it.,1,0,0.5456226688015192,0.4543773311984808,liar,50-100
+says donald trump is going to go out and carpet bomb the middle east.,1,0,0.5315752717813834,0.4684247282186166,liar,50-100
+soy ... el nico official estatal quin es un hombre de negocios.,1,0,0.5905467981624856,0.4094532018375144,liar,50-100
+the average age of first marijuana use is 12.,1,0,0.6292543019902788,0.3707456980097213,liar,0-50
+"even when all other state agencies took cuts, gov. [nathan] deal increased education spending every year.",1,0,0.6437725878965916,0.3562274121034084,liar,100-200
+richmond is the most vegan-friendly city.,1,0,0.5085477843840515,0.4914522156159485,liar,0-50
+the total unemployment rate for hispanic or latino workers has increased from 10% to 10.3% between january 2009 and march 2012.,1,0,0.7221577539958237,0.2778422460041762,liar,100-200
+the chinese government provides their people no access to the internet.,1,0,0.5806929772899649,0.4193070227100351,liar,50-100
+on switching parties.,1,0,0.6153544020352507,0.3846455979647493,liar,0-50
+marco rubio tried to insert $1.5 million for a rowing institute into the state budget.,1,0,0.5432295990191127,0.4567704009808872,liar,50-100
+the senate immigration bill unleashes a massive increase in overall immigration. were talking about a population increase under the senate bill of over 70 million people in 20 years.,1,0,0.5050195803736368,0.4949804196263632,liar,100-200
+"under pat mccrory, (north carolina) has fallen to 41st in teacher pay.",1,0,0.5623447898060088,0.4376552101939913,liar,50-100
+tampa bay isleading the state in jobs creation.,1,0,0.5665696326956196,0.4334303673043805,liar,0-50
+"members of congress passed a pay raise for themselves of $10,000 over two years even as they voted not to raise social security benefits for 2010 and 2011.",1,0,0.5466204029365948,0.4533795970634052,liar,100-200
+the islamic state just built a hotel in syria.,1,0,0.5569200363218322,0.4430799636781678,liar,0-50
+says barack obama has gone from blaming george w. bush to plagiarizing george w. bush.,1,0,0.5228783917067545,0.4771216082932454,liar,50-100
+"saystheres 400,000 anchor babies born in the united states a year, which areindividuals coming to our country and having their children so their children can be u.s. citizens.",1,0,0.73933725624335,0.26066274375665,liar,100-200
+the size of our federal government has more than doubled since the year 2000.,1,0,0.7872433161201465,0.2127566838798534,liar,50-100
+"the centerpiece of senator mccain's education policy is to increase the voucher program in d.c. by 2,000 slots.",1,0,0.7089809772345275,0.2910190227654725,liar,100-200
+"the big wall street banks, the big corporations give many times more political donations to democrats than republicans.",1,0,0.5760726082955556,0.4239273917044444,liar,100-200
+over 81 percent of the babies that are born at lbj hospital right here in houston are born of women who are not here legally.,1,0,0.7473137802851355,0.2526862197148645,liar,100-200
+no one on my staff has ever been charged with a crime.,1,0,0.6085000759665931,0.3914999240334069,liar,50-100
+were taxing our small businesses now at rates higher than corporations.,1,0,0.6250867910492576,0.3749132089507424,liar,50-100
+says a national coca-cola study showed texans love texas more than residents of any other state love their state; wisconsinites ranked second.,1,0,0.5889293179179145,0.4110706820820856,liar,100-200
+a poll taken a few months ago found 70 percent approval or higher for the act 10 collective bargaining law.,1,0,0.8197776545517305,0.1802223454482695,liar,100-200
+says texas is the only state that exempts jet fuel from its state motor fuels tax.,1,0,0.6173343028508298,0.3826656971491702,liar,50-100
+"middle-class families throughout america (would) have to pay $6,000 per year to pay for tax cuts for the wealthy.",1,0,0.5540398908427641,0.4459601091572359,liar,100-200
+i also voted 98 percent of the time with republicans in the oregon legislature.,1,0,0.818697315676396,0.181302684323604,liar,50-100
+"if they made no changes whatsoever, the [state employees pension] plan still had enough money to go forward for approximately the next 16 years.",1,0,0.6010661977235087,0.3989338022764913,liar,100-200
+there have been 30 published polls in this election cycle and harry reids been trailing in every single one.,1,0,0.6095243705422866,0.3904756294577133,liar,100-200
+"says obama flip-flopped on a gas-tax ""holiday.""",1,0,0.6889647939088689,0.3110352060911311,liar,0-50
+says only about 2 percent of gunsales in virginia are not subject to background checks.,1,0,0.7256517346771093,0.2743482653228907,liar,50-100
+says in the last five years senate republicans have placed a filibuster on every piece of legislation and every nominee.,1,0,0.6315509725892523,0.3684490274107477,liar,100-200
+on supporting right to work legislation in 2015,1,0,0.5109364844903663,0.4890635155096336,liar,0-50
+the state of rhode island has the worst state-funded pension in the country.,1,0,0.8245700373324443,0.1754299626675557,liar,50-100
+you cant pass a budget in the senate of the united states without 60 votes.,1,0,0.6266364559175954,0.3733635440824046,liar,50-100
+says josh mandel bet against ohio families,1,0,0.506175352195712,0.4938246478042881,liar,0-50
+"says adam hasner said he will never accept a pay increase, but he voted to raise his pay four times.",1,0,0.5222806364502904,0.4777193635497095,liar,100-200
+mitchell international airport is the the third busiest airport in the world and the number one busiest in the country.,1,0,0.5475568730681718,0.4524431269318282,liar,100-200
+florida has the second-lowest (campaign) contribution limit in the entire country.,1,0,0.7033343999562018,0.2966656000437982,liar,50-100
+mitt romney has 15 homes.,1,0,0.6949844164754105,0.3050155835245894,liar,0-50
+ronald reagans signature on the 1986 amnesty act gave barack obama about 15 million additional hispanic votes in 2012.,1,0,0.5717402371066036,0.4282597628933963,liar,100-200
+mccain opposed the border fence.,1,0,0.5055181460612974,0.4944818539387026,liar,0-50
+a new college tuition reciprocity agreement with minnesota makes college education more affordable for wisconsin residents.,1,0,0.6871160242482504,0.3128839757517497,liar,100-200
+"says u.s. senate candidate tommy thompson admitted that washington, d.c., changed him into an insider selling his influence to make millions from powerful special interests.",1,0,0.5925366459085004,0.4074633540914995,liar,100-200
+"ninety percent of the people who work in this country work for companies under 100 people, maybe even less than that.",1,0,0.7112113491553775,0.2887886508446224,liar,100-200
+florida students take an array of standardized high stakes tests which eat up as much as 45 school days per year.,1,0,0.5195297036152119,0.4804702963847881,liar,100-200
+milwaukees problems include 52 percent black male unemployment.,1,0,0.6388164220493178,0.3611835779506822,liar,50-100
+jules bailey was instrumental in creating the business energy tax credit that let companies like wal-mart profit by $11 million while costing the oregon general fund $33 million.,1,0,0.5130598845262169,0.4869401154737831,liar,100-200
+what (the obama administration is) going to come out with in the next several months is youre not even going to be able to burn coal very limitedly in the existing plants.,1,0,0.5528994443555151,0.4471005556444849,liar,100-200
+"the entirety of north america -- canada, the united states and mexico -- theres more known reserves in those three countries than in russia and saudi arabia.",1,0,0.6824257581937223,0.3175742418062777,liar,100-200
+polls on legalizing same-sex marriage are not dramatically changing.,1,0,0.5559482129997189,0.4440517870002811,liar,50-100
+the air force wants taxpayers to fund a fantasy football league.,1,0,0.5204981700888922,0.4795018299111077,liar,50-100
+says u.s. senate opponent tommy thompson favors raising taxes on small businesses.,1,0,0.6259292856778781,0.3740707143221219,liar,50-100
+"(dennis) richardson wants to make drastic cuts to services we depend on: schools, home care for seniors, even public safety -- all so richardson can keep more than $440 million in unspent funds for his political priorities.",1,0,0.5189071296899375,0.4810928703100626,liar,200-500
+vows to keep georgias race for governor civil and focused on the positive.,1,0,0.6971579363699499,0.30284206363005,liar,50-100
+eight million americans have dropped out of the work force since (barack) obama became president. ... the real unemployment rate is 19 percent.,1,0,0.5617935857097067,0.4382064142902933,liar,100-200
+the debt is nearly $6 trillion more than when president obama was sworn into office.,1,0,0.6627503954002976,0.3372496045997024,liar,50-100
+"says russ feingold got paid $8,000 a lecture at stanford university.",1,0,0.5460500145843415,0.4539499854156584,liar,50-100
+"a law was passed, apparently in the clinton administration, about whether, in recruiting offices marines or other military should be able to have guns. apparently it is prohibited.",1,0,0.5320445767462259,0.4679554232537741,liar,100-200
+the presence of gorillas calls into question the concept of evolution.,1,0,0.612194191419888,0.387805808580112,liar,50-100
+i havent really proposed (phasing out aid to israel) in the past.,1,0,0.5686867408196652,0.4313132591803347,liar,50-100
+wisconsin ranks 48th out of all 50 states in venture capital investment.,1,0,0.681462080292804,0.3185379197071961,liar,50-100
+"in the past six years alone, changes to the pension formula have saved over half a billion dollars.",1,0,0.7542538736920135,0.2457461263079864,liar,50-100
+i unsealed my records at marquette university.,1,0,0.5688124608506044,0.4311875391493955,liar,0-50
+"says opponent bill flores helped run a company that laid off over 3,000 workers and paid off executives with millions.",1,0,0.6496090626508447,0.3503909373491553,liar,100-200
+the tax cut deal is giving $700 billion to millionaires and billionaires.,1,0,0.5778030347066829,0.422196965293317,liar,50-100
+"weve had examples like in yuma county, where weve been able to stop 97 percent of the illegal (immigration) flow, and those programs, they abolish.",1,0,0.5232597411895858,0.4767402588104141,liar,100-200
+"the democrat majority in the senate has failed to submit [a] budget in the past 1,000 days.",1,0,0.6950867623452595,0.3049132376547406,liar,50-100
+"barack obama has ""pledged to reduce the size of the military.""",1,0,0.553279555388578,0.446720444611422,liar,50-100
+we have spent $350 million to deal with sea-level rise in the miami area and hundreds of millions of dollars to deal with coral reefs.,1,0,0.605574891358138,0.394425108641862,liar,100-200
+seventy percent of the people in the state of new jersey want marriage equality.,1,0,0.7263007599107238,0.2736992400892761,liar,50-100
+there are no similar clips of newt gingrich talking about how ineffective president bush was in trying to control north korea.,1,0,0.5637625109148364,0.4362374890851636,liar,100-200
+"if you look at the results of obamacare, what you see is emergency room visits are up over 50 percent.",1,0,0.5394560494671599,0.4605439505328401,liar,100-200
+"i have cut taxes 63 times, including a 2006 property tax reduction that ranks as the largest in state history.",1,0,0.787870284002869,0.212129715997131,liar,100-200
+"in 2001, former federal reserve chairman alan greenspan ""justified increasing spending and cutting taxes, saying that we didn't really need to pay down the debt.""",1,0,0.5751027065720509,0.4248972934279491,liar,100-200
+mequon and milwaukee have the highest disparity of income in the country.,1,0,0.7121514634268195,0.2878485365731805,liar,50-100
+says his executive order requiring young girls to be vaccinated against hpv wasnt mandatory.,1,0,0.5061299105303126,0.4938700894696873,liar,50-100
+says there are more federal dollars in gov. john kasichs budget plan than in the previous state budget.,1,0,0.555947334151047,0.444052665848953,liar,100-200
+"iowa has the fourth fastest-growing personal income in the united states, while nationally, the real wage has decreased over the past eight years that congressman (bruce) braley has been there by 2.7 percent.",1,0,0.7133550856647315,0.2866449143352685,liar,200-500
+ive never supported a payroll tax.,1,0,0.5153212423554283,0.4846787576445717,liar,0-50
+half of children struck by cars near schools are hit by parents driving children to school.,1,0,0.5980848378976071,0.4019151621023928,liar,50-100
+i helped write the affordable care act.,1,0,0.5447342587630422,0.4552657412369578,liar,0-50
+"the head of the irs ordered 24,000 emails erased before congress could review them, making sure the american people will never know the real truth.",1,0,0.5064467639854305,0.4935532360145694,liar,100-200
+"it took obama six months to pick out a family dog, but he's cramming health care reform down the country's throat in a fraction of that time.",1,0,0.5584840903309707,0.4415159096690293,liar,100-200
+"the departments of commerce, education and energy and the epa saw their spending increase by between 130 percent and 219 percent between 2008 and 2010.",1,0,0.6516600481757073,0.3483399518242927,liar,100-200
+"chile ranks third internationally in economic freedom, while the u.s. ranks 17th.",1,0,0.7017415602355288,0.2982584397644712,liar,50-100
+"the reality is, with a $2 trillion-a-year health care budget, we're spending more on health care, nearly 17 percent of our gross domestic product, versus 3.8 percent of gdp on the entire military budget.",1,0,0.7125371096643671,0.2874628903356328,liar,200-500
+the countrys bankrupt.,1,0,0.541165171044869,0.4588348289551309,liar,0-50
+"in 45 out of 50 states, on average men are seeing their premiums double, going up 99 percent. women up 62 percent.",1,0,0.8415605094448263,0.1584394905551737,liar,100-200
+we have more people working in the state of new jersey today than weve ever had in our history.,1,0,0.7292127998801512,0.2707872001198488,liar,50-100
+only five texas counties account for almost 90 percent of the (states) cattle industry.,1,0,0.7009918340099808,0.2990081659900193,liar,50-100
+says u.s. senate rival tommy thompson ran medicare into the ground and nine years closer to bankruptcy.,1,0,0.7597806685916939,0.2402193314083061,liar,100-200
+"says 160,000 kids stay home every day because they are afraid to go to school because of bullying.",1,0,0.5711535213540054,0.4288464786459945,liar,50-100
+"on healthcare.gov, texan mark sullivan found a good health insurance plan that includes dental, for less than $80 a month.",1,0,0.5180812984725236,0.4819187015274764,liar,100-200
+i've traveled the country advocating for the fairtax ...,1,0,0.7746740911677251,0.2253259088322748,liar,50-100
+lindsey graham endorsed charlie crist for u.s. senate.,1,0,0.5748271738400392,0.4251728261599607,liar,50-100
+unemployment and the housing and auto industry crises can be fixed by giving a million dollars to every worker over age 50 to retire.,1,0,0.710448447810002,0.2895515521899979,liar,100-200
+"when sacs came back to the dekalb county school district to give a midterm review, we got straight as.",1,0,0.6353875621799381,0.3646124378200619,liar,100-200
+gonzales losing campaign against me last spring was funded with more than $1 million from supporters and allies of governor bruce rauner.,1,0,0.6655985936331394,0.3344014063668605,liar,100-200
+the debt comes up all the time in town meetings ... but its never asked in the debates. its really weird. it hasnt been brought up.,1,0,0.5916763341032416,0.4083236658967583,liar,100-200
+"a report just came out that if we continue with president obamas policies, were looking at over 9 percent unemployment next year in the fourth quarter.",1,0,0.517444748440985,0.4825552515590149,liar,100-200
+heres something that people never talk about with coach schiano: rutgers had the best graduation rate of any division i football program in america.,1,0,0.5929800617725982,0.4070199382274018,liar,100-200
+"for the votes that we got, i think we spent, on average, two bucks a pop. compared to 42 bucks for incumbent milwaukee county executive chris abele.",1,0,0.5672186956900074,0.4327813043099926,liar,100-200
+a bill to save teacher jobs is completely paid for by closing corporate tax loopholes.,1,0,0.6242931722383844,0.3757068277616156,liar,50-100
+"the keystone oil pipeline would employ 20,000 people in the united states.",1,0,0.6368718768899166,0.3631281231100834,liar,50-100
+"a study says massachusetts has lost 18,000 jobs because residents were required to obtain health insurance under an act signed into law by mitt romney.",1,0,0.8053752296876728,0.1946247703123272,liar,100-200
+we had no domestic attacks under bush.,1,0,0.6543541990765993,0.3456458009234006,liar,0-50
+health care premiums up 90 percent in new hampshire.,1,0,0.5201341897827931,0.4798658102172068,liar,50-100
+says some austin school district classrooms lack electrical outlets.,1,0,0.6181767587566784,0.3818232412433215,liar,50-100
+"when you were casting your vote for republicans, brian kemp was voting for democrats. message-machine,voting-record doug-macginnitie sandy springs city councilman georgia republican 1 1 0 0 0 a campaign commercial 789.json half-true i want to give every american a $5,000 refundable tax credit.""",1,0,0.6804848238016181,0.3195151761983819,liar,200-500
+"any child born prematurely, according to the president, in his own words, can be killed.",1,0,0.6827231283076436,0.3172768716923564,liar,50-100
+"thirty-seven percent of central falls retired police officers and firefighters are out on disability pensions; in most municipalities, about 5 percent of retirees collect disability pensions.",1,0,0.7878583228449939,0.2121416771550061,liar,100-200
+"the working tax cut created over 40,000 new jobs in just the last four years.",1,0,0.6079336688713437,0.3920663311286563,liar,50-100
+"in arizona, there are only one and a half (border patrol) agents per every 10 square miles.",1,0,0.6695245596093806,0.3304754403906194,liar,50-100
+says obama flip-flopped on withdrawing troops from iraq.,1,0,0.7282742444646029,0.2717257555353971,liar,50-100
+"the wic program is an incredibly cost effective program, serving nearly 10 million americans each year and costing less than $100 per person. in my district, more than 18 percent of residents suffer from food insecurity and depend on wic to make ends meet.",1,0,0.8482509984799391,0.1517490015200609,liar,200-500
+saypresident george w. bush borrowed $1.37 trillion of social security surplus revenue to pay for his tax cuts for the rich and his war in iraq and never paid it back.,1,0,0.5427581386643321,0.4572418613356678,liar,100-200
+says the vaccine to prevent hpv can cause mental retardation.,1,0,0.5157713702315517,0.4842286297684482,liar,50-100
+the auto companies have now repaid taxpayers every dime and more of what my administration invested in.,1,0,0.7228460733935528,0.2771539266064472,liar,100-200
+"as we near the 10th anniversary of the 9/11 terrorist attacks, we should not forget that some of the hijackers used new jersey drivers licenses to board those aircraft.",1,0,0.6609130160871755,0.3390869839128245,liar,100-200
+''i have received more contributions than any other candidate in the race republican or democrat.'',1,0,0.6260397562093558,0.3739602437906442,liar,50-100
+says the simpson-bowles deficit reduction proposal urged raising $2 trillion in new revenue.,1,0,0.5076538076886858,0.4923461923113141,liar,50-100
+"71k shares share this story new jersey’s despised republican governor chris christie is in scalding hot water as the top state legislators are now looking into filing articles of impeachment against him if he is found guilty of having orchestrated the closing of the george washington bridge in order to punish a political rival. christie has been ordered to produce personal emails related to the “bridgegate” scandal by a judge, as wnyc reports: the decision on impeachment will be up to democratic speaker vincent prieto and if he gives the go-ahead, the assembly judiciary committee would begin the process.it takes a majority of the 80-member assembly to vote articles of impeachment. if it passes the democrat-controlled body, the trial would be in the senate, where two-thirds of senators would be needed to convict. although democrats hold a majority in the senate, they would need three republican senators to join them if all democrats vote to convict. chris christie is also republican presidential’s nominee donald trump’s transition team chairperson. just four days ago, federal prosecutors pointed the finger at christie at the start of a federal trial involving three senior aides to the governor, accusing christie of being deeply involved in the political retribution plot to shut down the george washington bridge to new york city, which resulted in the death of one person in an ambulance as enormous traffic jams stranded hundreds of thousands of motorists on one of the world’s busiest bridges. governor christie was trump’s most authoritative surrogate, as well as the first major “conservative” republican endorser, in a move which most assumed meant that his political career was over inasmuch as his public service career now depended on trump’s benefaction. going from a multi-year flirtation with running for the highest office to endorsing trump last march in a widely mocked ceremony then represented a stunning level of political debasement coming from the governor. famously, chris christie once lied for two hours straight to a nationally televised press conference, which you can see below in its painstaking detail. it’s have cued it to 1:43 so you can watch the republican governor’s the flat out denial of any knowledge of bridgegate which he gave on january 9th, 2014, just two short months after his re-election, and four months after the scandal which delayed ambulances and emergency services. bridegate literally gridlocked an entire town. last week it was revealed that governor christie was actually informed personally about bridgegate at the 9/11 memorial ceremony in 2013 from his senior aides, and stood by, and did nothing, though his aides knew about it and called him out for lying to everyone in their electronic messages. the republican governor once thought to be the future of the party is about to be booted from office by his self-defeating act of lying about his administration’s bare knuckle political bullying. we will watch this story closely, and await the reaction of republican nominee donald trump the impeachment charges christie is facing, because the new jersey governor is one of the pillars of this year’s republican presidential campaign. watch his shame: add your name to millions demanding that congress take action on the president’s crimes. impeach donald trump!",1,0,0.7911015797338147,0.2088984202661853,fakenewsnet,500-5000
+"state budget cuts for local schools resulted in nearly 4,000 educator layoffs",1,0,0.6002127600425056,0.3997872399574944,liar,50-100
+"in 2011, carlos lpez-cantera staunchly supported a florida bill modeled after arizonas immigration law",1,0,0.654933736394761,0.3450662636052389,liar,100-200
+says hillary clinton makes more per hour at a speaking gig than the average ceo does in a year.,1,0,0.5956469128285814,0.4043530871714186,liar,50-100
+"pope francis uses a modest compact car to get around, while creflo dollar drives an expensive sports car.",1,0,0.7160943857693078,0.2839056142306922,liar,100-200
+"the 2011 rebuild america jobs act would have cost the average american family $1,000 a year while making no significant impact to fix our infrastructure and roads.",1,0,0.7316321913994203,0.2683678086005797,liar,100-200
+says saddam hussein had a 10-year relationship with al-qaida.,1,0,0.5111919581704077,0.4888080418295922,liar,50-100
+half of all hospitalized seniors are suffering from malnutrition so severe that it either caused their illness or it prevents them from getting better.,1,0,0.5204603342179498,0.4795396657820502,liar,100-200
+"according to the cdc, 110 million americans now have a sexually transmitted illness.",1,0,0.6965577065884326,0.3034422934115673,liar,50-100
+"in every poll, john cornyn always loses to any conservative the voters have heard about.",1,0,0.5340587117839589,0.4659412882160411,liar,50-100
+governors proposed budget raids k-12 school funds to grow dhs again.,1,0,0.6712363464263944,0.3287636535736056,liar,50-100
+house republicans just passed a bill that makes it legal for single mothers to be fired by their employers.,1,0,0.5949078068705709,0.405092193129429,liar,100-200
+only 2 percent of public high schools in the country offer pe classes.,1,0,0.6485954260279332,0.3514045739720668,liar,50-100
+the amount of money that we put into running our own state legislature is nearly as much as we put into the university of rhode island.,1,0,0.5061981317617694,0.4938018682382305,liar,100-200
+"in states where beer is unregulated, the per capita production is significantly higher.",1,0,0.6410392890578296,0.3589607109421704,liar,50-100
+"hillary's main extracurricular activity in law school was helping the black panthers, on trial in connecticut for torturing and killing a federal agent.",1,0,0.5242788462364041,0.4757211537635959,liar,100-200
+i started the whole year as a senior on the university of illinois football team and led the team in interceptions and tackles from defensive back.,1,0,0.5460104253059153,0.4539895746940847,liar,100-200
+says one of the states largest governments made charging this tax one of their top priorities just this year.,1,0,0.5506429586256706,0.4493570413743294,liar,100-200
+says hjm 20 was the only bill not assigned to a house committee.,1,0,0.5722202951195834,0.4277797048804166,liar,50-100
+the denver post has actually hired an editor to promote pot.,1,0,0.6947487247199555,0.3052512752800445,liar,50-100
+mayor fung wants to punish our childrens education by removing 12 million dollars from current funding to pay for his private charter school. your taxes would increase by between 6 and 8 percent per year.,1,0,0.6412450508856633,0.3587549491143366,liar,200-500
+our federal government has lent $2 billion to the state-owned oil company of brazil to allow them to explore for oil and gas.,1,0,0.6755910630565147,0.3244089369434853,liar,100-200
+wisconsin women are paid 81 cents to the dollar of a man doing the same job.,1,0,0.5726856896512531,0.4273143103487469,liar,50-100
+millennials will be 75 percent of the workforce in the next 10 years.,1,0,0.583586632729091,0.416413367270909,liar,50-100
+tim kaine made virginia the best state for business four years in a row.,1,0,0.5035459547513588,0.4964540452486412,liar,50-100
+"the z-visa that was offered in that senate bill let everybody who's here illegally, other than criminals, stay here for the rest of their lives.",1,0,0.5203540525271029,0.479645947472897,liar,100-200
+"thirty million americans, including a lot of people in florida, are going to be able to get healthcare next year because of that law.",1,0,0.816066316509886,0.183933683490114,liar,100-200
+"says ron johnson is benefiting from several super pacs, i am not.",1,0,0.554314691019993,0.4456853089800069,liar,50-100
+"republican (small business tax cut) bill spends $80 million for better google searches, not job creation",1,0,0.7787837566485951,0.2212162433514048,liar,100-200
+the national unemployment rate has been above 8 percent for a record 36 months.,1,0,0.7574942895499702,0.2425057104500297,liar,50-100
+i was pretty proud of being the only guy on the stage that ever had a job in the private sector.,1,0,0.5847388489920615,0.4152611510079385,liar,50-100
+documents released from the soviet union show the soviet union started treating president ronald reagan more seriously after reagan fired the air traffic controllers.,1,0,0.5409696283975802,0.4590303716024197,liar,100-200

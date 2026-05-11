@@ -1,7 +1,12 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 import argparse
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from fake_news.data.io import build_unified_dataset
 from fake_news.data.split import split_dataframe
@@ -29,3 +34,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

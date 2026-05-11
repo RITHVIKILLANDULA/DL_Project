@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 import re
 
@@ -12,3 +14,4 @@ def clean_text(text: str) -> str:
     text = text.replace("\n", " ")
     text = _WS_PATTERN.sub(" ", text)
     return text.strip()
+

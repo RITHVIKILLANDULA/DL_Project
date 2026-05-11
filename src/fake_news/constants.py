@@ -1,3 +1,6 @@
+﻿from __future__ import annotations
+
+
 REAL_LABEL = 0
 FAKE_LABEL = 1
 
@@ -15,3 +18,4 @@ LABEL_MAP = {
     "0": REAL_LABEL,
     "1": FAKE_LABEL,
 }
+

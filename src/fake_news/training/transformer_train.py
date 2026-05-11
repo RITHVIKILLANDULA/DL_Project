@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 from dataclasses import dataclass
 from pathlib import Path
@@ -45,6 +47,14 @@ class TransformerTextDataset(Dataset):
         }
 
 
+def _build_class_weights(labels: pd.Series) -> torch.Tensor:
+    counts = labels.astype(int).value_counts().sort_index()
+    total = float(counts.sum())
+    num_classes = len(counts)
+    weights = [total / (num_classes * float(counts.get(cls, 1))) for cls in range(num_classes)]
+    return torch.tensor(weights, dtype=torch.float)
+
+
 def _compute_metrics(labels: list[int], preds: list[int]) -> dict[str, float]:
     return {
         "accuracy": accuracy_score(labels, preds),
@@ -54,9 +64,8 @@ def _compute_metrics(labels: list[int], preds: list[int]) -> dict[str, float]:
     }
 
 
-def _train_epoch(model, loader, optimizer, device) -> dict[str, float]:
+def _train_epoch(model, loader, optimizer, device, loss_fn) -> dict[str, float]:
     model.train()
-    loss_fn = nn.CrossEntropyLoss()
     total_loss = 0.0
     all_labels: list[int] = []
     all_preds: list[int] = []
@@ -84,9 +93,8 @@ def _train_epoch(model, loader, optimizer, device) -> dict[str, float]:
 
 
 @torch.no_grad()
-def _evaluate_epoch(model, loader, device) -> dict[str, float]:
+def _evaluate_epoch(model, loader, device, loss_fn) -> dict[str, float]:
     model.eval()
-    loss_fn = nn.CrossEntropyLoss()
     total_loss = 0.0
     all_labels: list[int] = []
     all_preds: list[int] = []
@@ -120,6 +128,8 @@ def train_transformer(
     max_len: int = 128,
     max_train_samples: int = 0,
     max_val_samples: int = 0,
+    use_class_weights: bool = True,
+    patience: int = 2,
 ) -> dict:
     set_seed(42)
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -141,23 +151,47 @@ def train_transformer(
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
     optimizer = AdamW(model.parameters(), lr=learning_rate)
+    class_weights = None
+    if use_class_weights:
+        class_weights = _build_class_weights(train_subset["label"])
+        class_weights = class_weights.to(device)
+    loss_fn = nn.CrossEntropyLoss(weight=class_weights)
 
     best_val_f1 = -1.0
+    best_epoch = 0
     history: list[dict] = []
     output_dir.mkdir(parents=True, exist_ok=True)
+    epochs_without_improvement = 0
 
     for epoch in range(1, epochs + 1):
-        train_metrics = _train_epoch(model, train_loader, optimizer, device)
-        val_metrics = _evaluate_epoch(model, val_loader, device)
+        train_metrics = _train_epoch(model, train_loader, optimizer, device, loss_fn)
+        val_metrics = _evaluate_epoch(model, val_loader, device, loss_fn)
 
         history.append({"epoch": epoch, "train": train_metrics, "val": val_metrics})
 
         if val_metrics["f1"] > best_val_f1:
             best_val_f1 = val_metrics["f1"]
+            best_epoch = epoch
+            epochs_without_improvement = 0
             save_path = output_dir / "best_transformer"
             model.save_pretrained(save_path)
             tokenizer.save_pretrained(save_path)
+        else:
+            epochs_without_improvement += 1
 
-    metrics = {"history": history, "best_val_f1": best_val_f1, "train_subset_size": len(train_subset), "val_subset_size": len(val_subset)}
+        if epochs_without_improvement >= patience:
+            break
+
+    metrics = {
+        "history": history,
+        "best_val_f1": best_val_f1,
+        "best_epoch": best_epoch,
+        "stopped_early": epochs_without_improvement >= patience,
+        "train_subset_size": len(train_subset),
+        "val_subset_size": len(val_subset),
+        "use_class_weights": use_class_weights,
+        "patience": patience,
+    }
     save_json(metrics, output_dir / "metrics_transformer.json")
     return metrics
+

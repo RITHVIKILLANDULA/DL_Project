@@ -1,0 +1,131 @@
+text,true_label,predicted_label,prob_fake,source_dataset,length_bin
+"says that in 2007, oregon ranked 25th -- or 7th from the bottom -- in percentage of children with untreated decay compared to 32 other states with similar data.",1,0,0.3694035410881042,liar,100-200
+"at a minimum, 40 percent of those who view child pornography end up molesting children as a result.",1,0,0.4890093207359314,liar,50-100
+"because gov. chris christie vetoed a 30-bill job creation package, new jersey ranks 50th in the nation in job creation.",1,0,0.4096044898033142,liar,100-200
+"toledo is fourth in the nation behind much bigger cities miami, las vegas, portland in number of human trafficking arrests and rescues.",1,0,0.4659858345985412,liar,100-200
+already in wisconsin we have seen fewer people pursuing education as a career due to the act 10 collective bargaining law.,1,0,0.4610384106636047,liar,100-200
+the 2010 dream act failed despite strong bipartisan support.,1,0,0.4147505760192871,liar,50-100
+roy blunt voted to raise his own pay 12 times while in congress.,1,0,0.4255485832691192,liar,50-100
+"in 2001 and 02 . . . we had the pension system funded at (the)100% level in that year, and we did for two years at that point.",1,0,0.4848441481590271,liar,100-200
+"a cashier earning $20,000 per year pays the same (virginia) income tax rate as a hedge fund manager earning $20 million per year.",1,0,0.2927937805652618,liar,100-200
+says jeb bush extended early voting after seeing long lines.,1,0,0.4021722078323364,liar,50-100
+says new jersey has fewer jobs since gov. chris christie took office.,1,0,0.4278003573417663,liar,50-100
+"for my energy plan, my economic plan, and the other proposals you'll hear tonight, i've offered spending cuts above and beyond their cost.",1,0,0.4784160852432251,liar,100-200
+earth has not warmed for the last 17 years.,1,0,0.3897213041782379,liar,0-50
+the five guantanamo detainees swapped for bowe bergdahl are right now back on the battlefield.,1,0,0.4804304838180542,liar,50-100
+says george lemieux even compared marco rubio to barack obama.,1,0,0.4710497856140136,liar,50-100
+"says that in 41 states, government workers are better paid than the taxpayers who support them.",1,0,0.4619811177253723,liar,50-100
+every major newspaper in texas calls david dewhurst a moderate.,1,0,0.4931741654872894,liar,50-100
+says she has quadrupled agents to secure our border.,1,0,0.4835558831691742,liar,50-100
+"there are more atheists in the country right now than jews, muslims, hindus and buddhists combined and doubled.",1,0,0.3972752094268799,liar,100-200
+"you cant get on an airplane, but more than 2,000 people on that list have been able to buy a gun.",1,0,0.4921581149101257,liar,50-100
+we spend half a trillion dollars a year in tax preparation.,1,0,0.2778122723102569,liar,50-100
+"today in america, between 40 and 50 percent of all african-american babies, virtually 1-in-2, are killed before they are born.",1,0,0.3185318410396576,liar,100-200
+some city of atlanta employees have not had raises in eight years.,1,0,0.4871750473976135,liar,50-100
+people who wash cars at home will use approximately 80 percent more water than they do in a car wash.,1,0,0.4633610248565674,liar,100-200
+says he won the second debate with hillary clinton in a landslide in every poll.,1,0,0.4693583548069,liar,50-100
+"a muslim immigrant in michigan can list his second, third or fourth wives as extended family and qualify for welfare.",1,0,0.4201712608337402,liar,100-200
+glen sturtevant is against smaller class sizes.,1,0,0.4178499281406402,liar,0-50
+this is the first time in the history that weve had the raising of a debt limit also with spending cuts.,1,0,0.461577832698822,liar,100-200
+californias prop 55 prevents $4 billion in new cuts to our schools.,1,0,0.4236759543418884,liar,50-100
+slim jims just recently cost 99 cents but now cost $2.69.,1,0,0.3548455834388733,liar,50-100
+says salaries and benefits for wisconsin state employee comprised 8.5 percent of the 2009-2011 state budget.,1,0,0.3380340933799743,liar,100-200
+"when george bush became president of the united states, 17 million people were in poverty. when he left, 30 million people were in poverty.",1,0,0.362522542476654,liar,100-200
+says that 9 million to 50 million undocumented immigrants live in the united states.,1,0,0.3639341294765472,liar,50-100
+florida has experienced positive job growth for 39 consecutive months.,1,0,0.1008528247475624,liar,50-100
+a yougov.com poll shows 71 percent of obama voters regret voting for him.,1,0,0.3543181419372558,liar,50-100
+"since 1978, california has spent $5 billion to put 13 people to death.",1,0,0.3795333504676819,liar,50-100
+"with 320,000 net ohio manufacturing jobs lost, (sen. rob) portman calls nafta a proven success.",1,0,0.3684909045696258,liar,50-100
+"the 90 percent statistic ofsupporting background checks, thats been debunked.",1,0,0.3206304609775543,liar,50-100
+says texas schools have had massive increases in class sizes with rick perry as governor.,1,0,0.3722139298915863,liar,50-100
+we spend less on defense today as % of gdp than at any time since pearl harbor.,1,0,0.2986375093460083,liar,50-100
+jim dunnam has not lived in the district he represents for years now.,1,0,0.4625695645809173,liar,50-100
+says florida had five sanctuary cities while jeb bush was governor.,1,0,0.2875256240367889,liar,50-100
+president obama has the lowest public approval ratings of any president in modern times.,1,0,0.4899911284446716,liar,50-100
+a study ranked florida no. 1 in government corruption under gov. rick scott.,1,0,0.4227024614810943,liar,50-100
+the average age of first marijuana use is 12.,1,0,0.3940195143222809,liar,0-50
+"even when all other state agencies took cuts, gov. [nathan] deal increased education spending every year.",1,0,0.3860696852207184,liar,100-200
+the total unemployment rate for hispanic or latino workers has increased from 10% to 10.3% between january 2009 and march 2012.,1,0,0.3497681319713592,liar,100-200
+im the only one whos fought against developers draining the everglades!,1,0,0.4593744277954101,liar,50-100
+on switching parties.,1,0,0.4975155889987945,liar,0-50
+tampa bay isleading the state in jobs creation.,1,0,0.3268978297710418,liar,0-50
+the size of our federal government has more than doubled since the year 2000.,1,0,0.2158227115869522,liar,50-100
+"the big wall street banks, the big corporations give many times more political donations to democrats than republicans.",1,0,0.4979880154132843,liar,100-200
+were taxing our small businesses now at rates higher than corporations.,1,0,0.4609869420528412,liar,50-100
+says a national coca-cola study showed texans love texas more than residents of any other state love their state; wisconsinites ranked second.,1,0,0.4763676822185516,liar,100-200
+a poll taken a few months ago found 70 percent approval or higher for the act 10 collective bargaining law.,1,0,0.3161702454090118,liar,100-200
+"after the 2012 redistricting, wisconsin has competitive congressional districts.",1,0,0.4687871634960174,liar,50-100
+i also voted 98 percent of the time with republicans in the oregon legislature.,1,0,0.3483146429061889,liar,50-100
+there have been 30 published polls in this election cycle and harry reids been trailing in every single one.,1,0,0.4712107181549072,liar,100-200
+says only about 2 percent of gunsales in virginia are not subject to background checks.,1,0,0.3964878916740417,liar,50-100
+says in the last five years senate republicans have placed a filibuster on every piece of legislation and every nominee.,1,0,0.375258207321167,liar,100-200
+the state of rhode island has the worst state-funded pension in the country.,1,0,0.362458735704422,liar,50-100
+you cant pass a budget in the senate of the united states without 60 votes.,1,0,0.4360548555850982,liar,50-100
+mitchell international airport is the the third busiest airport in the world and the number one busiest in the country.,1,0,0.4455581605434418,liar,100-200
+florida has the second-lowest (campaign) contribution limit in the entire country.,1,0,0.293908417224884,liar,50-100
+mitt romney has 15 homes.,1,0,0.1178331300616264,liar,0-50
+mccain opposed the border fence.,1,0,0.4342021346092224,liar,0-50
+a new college tuition reciprocity agreement with minnesota makes college education more affordable for wisconsin residents.,1,0,0.4200102090835571,liar,100-200
+74 percent of republicans support the affordable care act.,1,0,0.4153358042240143,liar,50-100
+"ninety percent of the people who work in this country work for companies under 100 people, maybe even less than that.",1,0,0.3574235141277313,liar,100-200
+florida students take an array of standardized high stakes tests which eat up as much as 45 school days per year.,1,0,0.4404058456420898,liar,100-200
+milwaukees problems include 52 percent black male unemployment.,1,0,0.2640654742717743,liar,50-100
+"says bernie sanders wins california landslide, but ⅔ of his votes arent counted.",1,0,0.3664296269416809,liar,50-100
+"the entirety of north america -- canada, the united states and mexico -- theres more known reserves in those three countries than in russia and saudi arabia.",1,0,0.2837078869342804,liar,100-200
+weve got more revenue than we ever have.,1,0,0.2322381436824798,liar,0-50
+barack obama has written and co-sponsored more bills in three years than hillary clinton has in seven.,1,0,0.4261355102062225,liar,100-200
+on his definition of takers and makers,1,0,0.4511287808418274,liar,0-50
+eight million americans have dropped out of the work force since (barack) obama became president. ... the real unemployment rate is 19 percent.,1,0,0.4022083282470703,liar,100-200
+wisconsin ranks 48th out of all 50 states in venture capital investment.,1,0,0.4094971120357513,liar,50-100
+"of all the illegals in america, more than half come through arizona.",1,0,0.4587309062480926,liar,50-100
+"in the past six years alone, changes to the pension formula have saved over half a billion dollars.",1,0,0.3999863266944885,liar,50-100
+the tax cut deal is giving $700 billion to millionaires and billionaires.,1,0,0.49600750207901,liar,50-100
+"the democrat majority in the senate has failed to submit [a] budget in the past 1,000 days.",1,0,0.4276252090930938,liar,50-100
+we have spent $350 million to deal with sea-level rise in the miami area and hundreds of millions of dollars to deal with coral reefs.,1,0,0.4248086512088775,liar,100-200
+seventy percent of the people in the state of new jersey want marriage equality.,1,0,0.3999326229095459,liar,50-100
+"i have cut taxes 63 times, including a 2006 property tax reduction that ranks as the largest in state history.",1,0,0.3624850213527679,liar,100-200
+mequon and milwaukee have the highest disparity of income in the country.,1,0,0.3351819813251495,liar,50-100
+says there are more federal dollars in gov. john kasichs budget plan than in the previous state budget.,1,0,0.4817400872707367,liar,100-200
+"iowa has the fourth fastest-growing personal income in the united states, while nationally, the real wage has decreased over the past eight years that congressman (bruce) braley has been there by 2.7 percent.",1,0,0.3920946419239044,liar,200-500
+far more children died last year drowning in their bathtubs than were killed accidentally by guns.,1,0,0.4931059777736664,liar,50-100
+six thousand people have sought addiction treatment through expanded medicaid.,1,0,0.4145470559597015,liar,50-100
+"the departments of commerce, education and energy and the epa saw their spending increase by between 130 percent and 219 percent between 2008 and 2010.",1,0,0.3317256867885589,liar,100-200
+"chile ranks third internationally in economic freedom, while the u.s. ranks 17th.",1,0,0.298135370016098,liar,50-100
+"the reality is, with a $2 trillion-a-year health care budget, we're spending more on health care, nearly 17 percent of our gross domestic product, versus 3.8 percent of gdp on the entire military budget.",1,0,0.3427440822124481,liar,200-500
+the countrys bankrupt.,1,0,0.4791951775550842,liar,0-50
+"in 45 out of 50 states, on average men are seeing their premiums double, going up 99 percent. women up 62 percent.",1,0,0.339518666267395,liar,100-200
+we have more people working in the state of new jersey today than weve ever had in our history.,1,0,0.397115409374237,liar,50-100
+only five texas counties account for almost 90 percent of the (states) cattle industry.,1,0,0.2033876925706863,liar,50-100
+says u.s. senate rival tommy thompson ran medicare into the ground and nine years closer to bankruptcy.,1,0,0.4123938977718353,liar,100-200
+on donald trumps track record in business,1,0,0.3828678131103515,liar,0-50
+unemployment and the housing and auto industry crises can be fixed by giving a million dollars to every worker over age 50 to retire.,1,0,0.4495003521442413,liar,100-200
+"when sacs came back to the dekalb county school district to give a midterm review, we got straight as.",1,0,0.4866102635860443,liar,100-200
+social security took seven years before anybody got the first check.,1,0,0.4318036437034607,liar,50-100
+gonzales losing campaign against me last spring was funded with more than $1 million from supporters and allies of governor bruce rauner.,1,0,0.3708883225917816,liar,100-200
+says most texas schools spend 45 out of 180 school days in mandated testing.,1,0,0.2985420227050781,liar,50-100
+heres something that people never talk about with coach schiano: rutgers had the best graduation rate of any division i football program in america.,1,0,0.4882104694843292,liar,100-200
+"i remember one of [curt schillings] teammates said he painted his sock, the bloody sock.",1,0,0.4938846528530121,liar,50-100
+"for the votes that we got, i think we spent, on average, two bucks a pop. compared to 42 bucks for incumbent milwaukee county executive chris abele.",1,0,0.4483566284179687,liar,100-200
+"the keystone oil pipeline would employ 20,000 people in the united states.",1,0,0.4361376464366913,liar,50-100
+says texas school systems lose 45 days a year on testing.,1,0,0.2868397533893585,liar,50-100
+health care premiums up 90 percent in new hampshire.,1,0,0.4077706038951874,liar,50-100
+"when you were casting your vote for republicans, brian kemp was voting for democrats. message-machine,voting-record doug-macginnitie sandy springs city councilman georgia republican 1 1 0 0 0 a campaign commercial 789.json half-true i want to give every american a $5,000 refundable tax credit.""",1,0,0.476397842168808,liar,200-500
+"thirty-seven percent of central falls retired police officers and firefighters are out on disability pensions; in most municipalities, about 5 percent of retirees collect disability pensions.",1,0,0.3384517729282379,liar,100-200
+"in arizona, there are only one and a half (border patrol) agents per every 10 square miles.",1,0,0.3394671380519867,liar,50-100
+"the wic program is an incredibly cost effective program, serving nearly 10 million americans each year and costing less than $100 per person. in my district, more than 18 percent of residents suffer from food insecurity and depend on wic to make ends meet.",1,0,0.3543716967105865,liar,200-500
+saypresident george w. bush borrowed $1.37 trillion of social security surplus revenue to pay for his tax cuts for the rich and his war in iraq and never paid it back.,1,0,0.4924038350582123,liar,100-200
+the auto companies have now repaid taxpayers every dime and more of what my administration invested in.,1,0,0.3438775241374969,liar,100-200
+''i have received more contributions than any other candidate in the race republican or democrat.'',1,0,0.3325370848178863,liar,50-100
+"state budget cuts for local schools resulted in nearly 4,000 educator layoffs",1,0,0.4421680569648742,liar,50-100
+says hillary clinton makes more per hour at a speaking gig than the average ceo does in a year.,1,0,0.3691719472408294,liar,50-100
+"the 2011 rebuild america jobs act would have cost the average american family $1,000 a year while making no significant impact to fix our infrastructure and roads.",1,0,0.472550630569458,liar,100-200
+"in every poll, john cornyn always loses to any conservative the voters have heard about.",1,0,0.4616763293743133,liar,50-100
+governors proposed budget raids k-12 school funds to grow dhs again.,1,0,0.4986316859722137,liar,50-100
+only 2 percent of public high schools in the country offer pe classes.,1,0,0.4024481773376465,liar,50-100
+i started the whole year as a senior on the university of illinois football team and led the team in interceptions and tackles from defensive back.,1,0,0.4588973224163055,liar,100-200
+mayor fung wants to punish our childrens education by removing 12 million dollars from current funding to pay for his private charter school. your taxes would increase by between 6 and 8 percent per year.,1,0,0.4755305647850036,liar,200-500
+"since being elected, (tom barrett) has dumped 8.2 billion gallons of raw sewage into lake michigan.",1,0,0.3970208764076233,liar,50-100
+millennials will be 75 percent of the workforce in the next 10 years.,1,0,0.4463048875331878,liar,50-100
+tim kaine made virginia the best state for business four years in a row.,1,0,0.4979625940322876,liar,50-100
+"republican (small business tax cut) bill spends $80 million for better google searches, not job creation",1,0,0.4265170693397522,liar,100-200
+the national unemployment rate has been above 8 percent for a record 36 months.,1,0,0.3426283001899719,liar,50-100

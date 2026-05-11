@@ -1,20 +1,23 @@
-# Fake News Detection (DL Project 2.5)
+# Fake News Detection (CSE 676 DL Project)
 
-End-to-end deep learning pipeline for fake news detection using:
-- LIAR (short political statements)
-- FakeNewsNet (full news articles)
+End-to-end deep learning pipeline for fake-news detection on:
+- **LIAR** — thousands of short labeled political statements
+- **FakeNewsNet (BuzzFeed subset)** — full-length labeled news articles
 
-It includes preprocessing, train/val/test split, RNN/LSTM/Transformer training, evaluation, error analysis, and an optional Streamlit demo.
+The pipeline covers preprocessing, train/val/test splitting, RNN / LSTM / Transformer training, bootstrap-CI evaluation, per-dataset and length-bin error analysis, and a Streamlit demo.
+
+See [reports/final_report.md](reports/final_report.md) for the writeup with numbers, ablations, limitations, and ethics discussion.
 
 ## 1) Project Structure
 
-- `data/raw/`: input datasets
+- `data/raw/`: input datasets (Kaggle dumps + GloVe vectors)
 - `data/processed/`: generated train/val/test CSV files
-- `models/`: trained checkpoints and metrics
-- `reports/`: final evaluation artifacts
+- `models/`: trained checkpoints and per-model metrics
+- `reports/`: evaluation artifacts (per-model predictions, error analyses, final report)
 - `src/fake_news/`: library code (data, models, training, evaluation)
 - `scripts/`: runnable CLI scripts
-- `app/streamlit_app.py`: optional demo UI
+- `app/streamlit_app.py`: optional Streamlit demo
+- `app/app_flask.py`: optional Flask demo
 
 ## 2) Setup
 
@@ -22,106 +25,97 @@ It includes preprocessing, train/val/test split, RNN/LSTM/Transformer training, 
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-set PYTHONPATH=%CD%\src
+pip install kagglehub
+set PYTHONIOENCODING=utf-8
 ```
 
-## 3) Data Preparation
+## 3) Download datasets via kagglehub
 
-Place files in `data/raw/` (or provide absolute paths):
-- LIAR input can be either:
-	- one TSV file, or
-	- a folder containing `train.tsv`, `valid.tsv`, `test.tsv`
-- FakeNewsNet input can be either:
-	- one labeled CSV with label column (`label`/`target`/`class`/`is_fake`) and text-like column (`text`/`content`/`article`/`title`), or
-	- a folder with the 4 split CSVs (`politifact_fake.csv`, `politifact_real.csv`, `gossipcop_fake.csv`, `gossipcop_real.csv`), or
-	- a folder containing downloaded article files named `news content.json` (or `news_content.json`)
-
-Run:
-
-```bash
-python scripts/prepare_data.py --liar-path liar_dataset --fakenewsnet-path data/raw/fakenewsnet --out-dir data/processed
+```python
+import kagglehub
+kagglehub.dataset_download("doanquanvietnamca/liar-dataset")
+kagglehub.dataset_download("mdepak/fakenewsnet")
 ```
 
-Outputs:
-- `data/processed/train.csv`
-- `data/processed/val.csv`
-- `data/processed/test.csv`
+Then copy into `data/raw/kaggle/liar/` and `data/raw/kaggle/fakenewsnet/`.
 
-## 4) Train RNN/LSTM
-
-RNN:
+## 4) Build splits
 
 ```bash
-python scripts/train_classic.py --model rnn --train data/processed/train.csv --val data/processed/val.csv --epochs 8
+python scripts/prepare_data.py --liar-path data/raw/kaggle/liar --fakenewsnet-path data/raw/kaggle/fakenewsnet --out-dir data/processed
 ```
 
-LSTM:
+The loader automatically:
+- Concatenates LIAR's three TSV splits.
+- Loads FakeNewsNet article bodies from BuzzFeed `*_news_content.csv` files.
+- **Detects and skips** the broken PolitiFact CSV pair in the Kaggle dump (the `_fake` and `_real` files contain identical data).
+- Deduplicates on exact text **before** the train/val/test split.
+
+Outputs: `data/processed/{train,val,test}.csv` with columns `text,label,source_dataset`.
+
+## 5) Train baseline + neural models
 
 ```bash
-python scripts/train_classic.py --model lstm --train data/processed/train.csv --val data/processed/val.csv --epochs 8
+# Baseline
+python scripts/train_baseline_tfidf.py
+
+# BiRNN (with GloVe + mean pooling + gradient clipping)
+python scripts/train_classic.py --model-type rnn --epochs 10 --max-len 256 --learning-rate 1e-3
+
+# BiLSTM (with GloVe)
+python scripts/train_classic.py --model-type lstm --epochs 12 --max-len 256 --learning-rate 1e-3
+
+# DistilBERT (fine-tuning)
+python scripts/train_transformer.py --epochs 4 --batch-size 16 --max-len 128 --patience 2
 ```
 
 Artifacts:
-- `models/best_rnn.pt` or `models/best_lstm.pt`
-- `models/metrics_rnn.json` or `models/metrics_lstm.json`
+- `models/baseline_tfidf/` (sklearn pickle)
+- `models/classic_rnn/best_rnn.pt`, `models/classic_lstm/best_lstm.pt`
+- `models/best_transformer/` (Hugging Face format)
+- `models/metrics_*.json` per-model
 
-## 5) Train Transformer
+## 6) Predict + Evaluate
+
+Generate predictions for all four models on the test set:
 
 ```bash
-python scripts/train_transformer.py --train data/processed/train.csv --val data/processed/val.csv --model-name distilbert-base-uncased --epochs 3
+python scripts/predict_classic.py --checkpoint models/classic_rnn/best_rnn.pt --out reports/predictions_rnn.csv
+python scripts/predict_classic.py --checkpoint models/classic_lstm/best_lstm.pt --out reports/predictions_lstm.csv
+python scripts/predict_transformer_test.py
 ```
 
-Artifacts:
-- `models/best_transformer/`
-- `models/metrics_transformer.json`
-
-## 6) Generate Predictions + Evaluate
-
-For classic model checkpoint:
+Run the comprehensive evaluation (overall + per-source + bootstrap 95 % CIs):
 
 ```bash
-python scripts/predict_classic.py --checkpoint models/best_lstm.pt --input-csv data/processed/test.csv --out reports/predictions.csv
-python scripts/evaluate_predictions.py --test data/processed/test.csv --predictions reports/predictions.csv --out-dir reports
+python scripts/full_evaluation.py
+```
+
+Quantitative error analysis (by text-length bin and by source dataset):
+
+```bash
+python scripts/detailed_error_analysis.py
 ```
 
 Outputs:
-- `reports/metrics_test.json`
-- `reports/false_positives.csv`
-- `reports/false_negatives.csv`
+- `reports/full_evaluation.json`
+- `reports/error_analysis_detailed.json`
+- `reports/false_positives_*.csv`, `reports/false_negatives_*.csv`
 
-## 7) Optional Demo App
+## 7) Streamlit demo
 
 ```bash
 streamlit run app/streamlit_app.py
 ```
 
-Use a trained checkpoint path (for example: `models/best_lstm.pt`) and paste text to classify.
+Point it at a checkpoint (e.g., `models/classic_lstm/best_lstm.pt` or `models/best_transformer/`) and paste text to classify.
 
-## 8) Recommended Report Checklist
+## 8) Reproducibility
 
-- Dataset summary + label mapping policy
-- Preprocessing choices
-- Model architectures and hyperparameters
-- Metrics table (Accuracy, Precision, Recall, F1)
-- Confusion matrix
-- Error analysis (FP/FN examples and patterns)
-- Comparison: RNN vs LSTM vs Transformer
-- Limitations and next improvements
+- All seeds fixed to 42.
+- CPU-only execution is supported; training times listed in [reports/final_report.md §8](reports/final_report.md).
+- Library code is in `src/fake_news/`; CLI scripts in `scripts/`.
 
-## 9) Build Final Report
+## 9) LLM Usage
 
-Generate a consolidated comparison and error-analysis report from the saved predictions and metrics:
-
-```bash
-python scripts/build_final_report.py
-```
-
-Artifacts:
-- `reports/final_report.md`
-- `reports/final_report.json`
-- `reports/false_positives_rnn.csv`
-- `reports/false_negatives_rnn.csv`
-- `reports/false_positives_lstm.csv`
-- `reports/false_negatives_lstm.csv`
-- `reports/false_positives_transformer.csv`
-- `reports/false_negatives_transformer.csv`
+Coding and writing assistance was provided by Claude (Anthropic). All empirical numbers were taken verbatim from the JSON outputs in `reports/` and were not rewritten by the model. See §10 of the final report for full disclosure.

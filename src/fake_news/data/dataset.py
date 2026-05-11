@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 from collections import Counter
 from dataclasses import dataclass
@@ -66,3 +68,4 @@ class NewsDataset(Dataset):
             "input_ids": torch.tensor(text_ids, dtype=torch.long),
             "labels": torch.tensor(self.labels[idx], dtype=torch.long),
         }
+

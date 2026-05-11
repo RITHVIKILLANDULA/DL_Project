@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 from dataclasses import dataclass
 
@@ -27,3 +29,4 @@ def split_dataframe(df: pd.DataFrame, seed: int = 42) -> SplitResult:
         stratify=tmp_df["label"],
     )
     return SplitResult(train=train_df.reset_index(drop=True), val=val_df.reset_index(drop=True), test=test_df.reset_index(drop=True))
+

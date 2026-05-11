@@ -1,0 +1,212 @@
+text,true_label,predicted_label,prob_fake,source_dataset,length_bin
+were the worst state in the country at moving people from welfare to work.,1,0,0.3831686079502105,liar,50-100
+we are experiencing the worst economic recovery america has ever had.,1,0,0.4309858381748199,liar,50-100
+says new figures he released showing wisconsin job gains for 2011 are the final job numbers.,1,0,0.4466950893402099,liar,50-100
+"small businesses that have $250,000 in gross sales for the business. theyre the ones that are looking at massive tax increases.",1,0,0.3994945287704468,liar,100-200
+"says that in 2007, oregon ranked 25th -- or 7th from the bottom -- in percentage of children with untreated decay compared to 32 other states with similar data.",1,0,0.3337662816047668,liar,100-200
+"at a minimum, 40 percent of those who view child pornography end up molesting children as a result.",1,0,0.3175891935825348,liar,50-100
+the children coming across the southern u.s. border were never examined after they got here and quarantined if they had a disease. they were just sent out across the country. many of them had measles ... we now have an outbreak of it all because of our immigration policy.,1,0,0.4074923396110534,liar,200-500
+"toledo is fourth in the nation behind much bigger cities miami, las vegas, portland in number of human trafficking arrests and rescues.",1,0,0.3048255741596222,liar,100-200
+"says the clinton foundation accepted millions and millions of dollars from governments like algeria, saudi arabia, oman and the united arab emirates, which violated a ban on all contributions to the foundation from foreign nations.",1,0,0.4999469220638275,liar,200-500
+already in wisconsin we have seen fewer people pursuing education as a career due to the act 10 collective bargaining law.,1,0,0.3405284285545349,liar,100-200
+"the 48, 49 percent that supports president barack obama are people who pay no income tax.",1,0,0.453788548707962,liar,50-100
+clackamas county commissioners approved a re-negotiated agreement to lower the countys contribution to trimets portland-milwaukie light rail project to $19.9 million from $25 million.,1,0,0.4744671285152435,liar,100-200
+obamacare will drive 2.5 million americans out of the workforce.,1,0,0.4414793252944946,liar,50-100
+"bob menendez just voted to increase the governments debt ceiling to $1.9 trillion! in his 19 years in congress, menendez has helped overspend america over $15 trillion into debt.",1,0,0.4549789130687713,liar,100-200
+says oregon is one of only three states that allow the use of gillnets on inland waters.,1,0,0.3884462118148803,liar,50-100
+virginia has made no progress on jobs since bob mcdonnell took office.,1,0,0.4130919575691223,liar,50-100
+"in 2001 and 02 . . . we had the pension system funded at (the)100% level in that year, and we did for two years at that point.",1,0,0.308906227350235,liar,100-200
+"a cashier earning $20,000 per year pays the same (virginia) income tax rate as a hedge fund manager earning $20 million per year.",1,0,0.274384468793869,liar,100-200
+says new jersey has fewer jobs since gov. chris christie took office.,1,0,0.4018095433712005,liar,50-100
+"says that according to a study, under obamas health care initiative, nearly 90 percent of people in wisconsin with health insurance will have their costs go up by more than 30 percent.",1,0,0.4832720756530761,liar,100-200
+earth has not warmed for the last 17 years.,1,0,0.3885625004768371,liar,0-50
+the fed created $15 trillion in the bailout process and $5 trillion went overseas.,1,0,0.4137255251407623,liar,50-100
+oregon is the only state out of the 50 states in the usa that continues to pay 100% of the medical benefits for its employees and their families.,1,0,0.2723661065101623,liar,100-200
+"7k shares share this story last night, the city of charlotte was rocked with protests for a second straight night as massive crowds protested the police killing of kenneth l. scott. during the protests, a civilian was shot in the head and critically injured. the police quickly told the media that the shooter was also a civilian, but a number of eyewitness reports seem to indicate that the police are lying – and that the shot came from law enforcement. one key eye witness report emerged from charlotte on twitter, along with a graphic photo of the bloody aftermath and a haunting statement from todd zimmer, who claims to have assisted in the emergency response: “i didn’t want to post about this, but my city is lying about what happened tonight. let the record show.” my friend @neutralized was on the ground in charlotte. he saw the shooting. here's his account. pic.twitter.com/h5cqxran37 — max berger (@maxberger) september 22, 2016 we interviewed kahran meyer, who is a north carolina criminal defense lawyer and a key eye witness on the scene. the 29-year-old published this tweet just an hour after witnessing the shots and noticing that the weapons discharge did not sound like a typical firearm: i watched a man die tonight with my own two eyes. it was not by a civilian. i don't care what cnn tells you. i was right fucking there. — black matlock (@kahranatlaw) september 22, 2016 “i didn’t realize that i was standing next to someone from cnn at the time. it started when everybody met at the park and marched from there down a couple of city blocks, when somebody said let’s march to the police station. it was peaceful, people had signs that said “hands up, don’t shoot,” kahran meyers told me at 1:50am tonight. “the protest then marched to college street and trade street in front of the omni hotel. at that time, police were not at all directing traffic, just keeping the peace,” meyer told me almost breathlessly, “i’ve been told that the idea was to walk into the omni and hold our hands up [in protest] and chant ‘hands up, don’t shoot’ and there was a crowd of roughly 1,000 people. we wanted to demonstrate to the upper class, the bourgeoisie that there is a problem.” “after leaving ‘the epicenter,’ police made a human barrier to block a return to the main square, so the crowd was facing the hotel. at that point, all of the protests were completely peaceful – and that’s when the riot police arrived. i swear to god, you could feel the temperature go up by 10 degrees.” meyers had a brief interaction with one of the riot officers at that point, and asked them whose idea it was to send out police in heavy armor. the charlotte officer coyly nodded his head upward as if to indicate brass. meyers told him that it was an unnecessary escalation and he replied, “oh, absolutely.” five minutes later, a protester lay near death in a pool of blood in the street. “it wasn’t a gunshot,” she told us. “it was much louder. it wasn’t a civilian injury. the way people scattered. no way. at least a dozen people exclaimed loudly ‘they just shot him’ and people in the crowd were familiar with him [the protester shot by police]. at that point, the peaceful protesters who hadn’t already left, exited.” at that moment, meyers says that charlotte-mecklenberg police then read the riot act to the protesters. as she made it to the next block, police opened up with teargas from two directions into the already retreating crowd of peaceful protesters. it took meyers fifteen minutes to leave the scene, and as she was departing she spotted a news crew reviewing live video, it was a split-screen. according to meyer, that videographer was from cnn and had been standing next to the lawyer, and when reunited said it was ‘entirely too loud for a gunshot too. it was so loud it shook my tripod and all of my equipment.’ cnn reports, “police say the person was shot by a civilian.” the city of charlotte began spinning the protester’s grave injuries immediately on twitter: alert: fatal shot uptown was civilian on civilian. @cmpd did not fire shot. — city of charlotte (@cltgov) september 22, 2016 two additional eye witness reports have emerged on twitter refute the charlotte police’s claim that a civilian shot and severely injured a protester. the first is from the charlotte clergy coalition for justice, who issued a press release of sorts through a widely followed palestinian rights activist. “i saw the man go down on the pavement,” said minister steve knight of missiongathering christian church in charlotte whose written statement points the finger squarely at charlotte-meckenberg police for the shooting, “it was an ambush. the victim was shot while he stood between two ministers, and we believe he was shot by police.” #charlotte clergy question media & police accounts of tonight's shooting of protester. #charlotteprotest #keithlamontscott pic.twitter.com/tlvowveyav — linda sarsour (@lsarsour) september 22, 2016 lastly, a man named eddie thomas posted on facebook – which was also shared via twitter – that, “within 5 mins (no exaggeration a dude lay bleeding on the ground, eye rolling in the bakc of his head. he got shot with something, maybe a rubber bullet. i yelled at the bike cops for help and they did nothing.” when african-americans attempt to express their frustration and anger and the violence inflicted upon them by the state, the state responds the only way it knows how – with more violence. original story by grant stern at pinac news: “witness: charlotte riot police did shoot protester, deny involvement blaming civilians“ add your name to millions demanding that congress take action on the president’s crimes. impeach donald trump!",1,0,0.3265222907066345,fakenewsnet,>=5000
+the increase in the garbage tax that [mayor allan fung] imposed in cranston for some people has been as much as $200.,1,0,0.4184897243976593,liar,100-200
+"says that in 41 states, government workers are better paid than the taxpayers who support them.",1,0,0.3819806277751922,liar,50-100
+says she has quadrupled agents to secure our border.,1,0,0.4511407911777496,liar,50-100
+"there are more atheists in the country right now than jews, muslims, hindus and buddhists combined and doubled.",1,0,0.3083712756633758,liar,100-200
+a lot of student loans are already refinanced by the federal government.,1,0,0.4171621799468994,liar,50-100
+exposure to the electromagnetic fields from power lines has been associated with childhood leukemia and other diseases.,1,0,0.4421327710151672,liar,100-200
+"you cant get on an airplane, but more than 2,000 people on that list have been able to buy a gun.",1,0,0.388243019580841,liar,50-100
+we spend half a trillion dollars a year in tax preparation.,1,0,0.26529461145401,liar,50-100
+"today in america, between 40 and 50 percent of all african-american babies, virtually 1-in-2, are killed before they are born.",1,0,0.2444042116403579,liar,100-200
+i never supported a state income tax for texas.,1,0,0.4716521203517914,liar,0-50
+"after the texas cutoff of aid to womens health care services including planned parenthood clinics, over 150,000 women lost the only health care they had. our medicaid birth rate shot up. it cost taxpayers over $130 million in one year alone in extra medicaid birth costs.",1,0,0.4875040352344513,liar,200-500
+some city of atlanta employees have not had raises in eight years.,1,0,0.3859494626522064,liar,50-100
+there were 36 states where republicans who were in charge refused to implement a state (health insurance) exchange.,1,0,0.3783637583255768,liar,100-200
+people who wash cars at home will use approximately 80 percent more water than they do in a car wash.,1,0,0.3027803897857666,liar,100-200
+says he won the second debate with hillary clinton in a landslide in every poll.,1,0,0.4589081406593323,liar,50-100
+"a muslim immigrant in michigan can list his second, third or fourth wives as extended family and qualify for welfare.",1,0,0.3490727543830871,liar,100-200
+glen sturtevant is against smaller class sizes.,1,0,0.4760366976261139,liar,0-50
+this is the first time in the history that weve had the raising of a debt limit also with spending cuts.,1,0,0.3176912069320678,liar,100-200
+"a small business receiving a federal tax credit ""to provide health care for its employees ... would be barred under the stupak amendment from allowing their employees to use ... the health care that they offer them for abortion.""",1,0,0.4865758419036865,liar,200-500
+four members of the rhode island general assembly went to vote in 2010 and were told they had already voted.,1,0,0.4234274327754974,liar,100-200
+californias prop 55 prevents $4 billion in new cuts to our schools.,1,0,0.3910450041294098,liar,50-100
+"dont believe those phony numbers when you hear 4.9 and 5 percent unemployment. the numbers probably 28, 29, as high as 35. in fact, i even heard recently 42 percent.",1,0,0.4795611202716827,liar,100-200
+"in the 513 days between trayvon dying, and todays verdict, 11,106 african-americans have been murdered by other african-americans.",1,0,0.4732033014297485,liar,100-200
+it has been over 80 years since a lame-duck president appointed a supreme court justice.,1,0,0.2991597056388855,liar,50-100
+a $300 million stimulus allocation to wisconsin has led to the creation of tens of thousands of jobs in every corner of this state.,1,0,0.4291786253452301,liar,100-200
+slim jims just recently cost 99 cents but now cost $2.69.,1,0,0.3258794546127319,liar,50-100
+says salaries and benefits for wisconsin state employee comprised 8.5 percent of the 2009-2011 state budget.,1,0,0.3234016299247741,liar,100-200
+mcginty previously told a local community newspaper in her native philadelphia that she has found an alarming undercurrent of misinformed people in the t part of the state outside of philadelphia and pittsburgh.,1,0,0.4152789115905761,liar,200-500
+"note in arabic found with nyc bomb… call says there will be more bombings police have found some very disturbing leads in the chelsea bombing this last saturday. the greatest suspicion is muslim extremists who are claiming credit for the terror that injured dozens. the bomb in chelsea injured 29 people, all discharged from the hospital. another pressure-cooker bomb was found stashed in a dumpster four blocks away. police are investigating just what happened. while the leads come in, there are three in particular that have grabbed the attention of the press: lead #1 – a hand-written letter, a portion of which was in arabic, was found inside the plastic bag that also held the second device. lead #2 – a 911 unidentified male caller warned of further explosions and the call went like this: “i’m looking at the explosion down the block. there will be more.” lead #3 – a tumblr page called ‘i’m the ny bomber’ that claims to be the “manifesto” of the bomber responsible for the explosion that rocked new york city saturday night. here. manufacturing test explosives hi. × 101 things all young adults should know by sir john hawkins john hawkins's book 101 things all young adults should know is filled with lessons that newly minted adults need in order to get the most out of life. gleaned from a lifetime of trial, error, and writing it down, hawkins provides advice everyone can benefit from in short, digestible chapters. buy now you probably have all seen the news by now, the explosives detonated in new york city, that was me. those were just some tests, i know where i have made errors and i will not make the same mistake next time. i did it because i cannot stand society. i cannot live in a world where homosexuals like myself as well as the rest of the lgbtq+ community are looked down upon by society. it is 2016 and we are still being viewed as mentally ill, sinners, attention seekers, and just plain weirdos in general. i am not going to stand by while under classed and underprivileged people are oppressed. i am not going to stand by while there is inequality in my country such as the racism being seen in white police officers all over the country. i am not going to live in a country where it is ok to have a misogynist, xenophobic, racist islamophobic, republican candidate running for president of the united states! that’s implying that republicans in general should even be taken seriously as they are all cisgendered privileged white people. this is not the end, this is just the beginning. i will be remembered. i will make a difference. i will eliminate my targets before it is too late. someone is lying and it’s just sick that anyone would want to claim this, especially one who didn’t even do it. trying to benefit off of other’s terror is as base as you can go next to being the perpetrator.",1,0,0.4902799427509308,fakenewsnet,500-5000
+says students who receive free or reduced lunch are performing just as well as students who do not.,1,0,0.4024746716022491,liar,50-100
+"gov. romney himself, with 28 other republican governors, supported policies that would have eliminated the time limits in the welfare reform law and allowed people to stay on welfare forever.",1,0,0.4626131951808929,liar,100-200
+"says the internal revenue service estimated it must hire 16,500 agents at a cost of $10 billion to the taxpayer to enforce the federal health care overhaul.",1,0,0.4205218255519867,liar,100-200
+"when george bush became president of the united states, 17 million people were in poverty. when he left, 30 million people were in poverty.",1,0,0.3702923655509949,liar,100-200
+"john mccain, ""one of the richest people in a senate filled with millionaires,"" says the solution to the housing crisis is for people to get a ""second job"" and ""skip their vacations.""",1,0,0.4331629872322082,liar,100-200
+"300,000 floridians have lost their health insurance as a result of obamacare.",1,0,0.4470245540142059,liar,50-100
+"hillary's baby bond proposal would give $5,000 to each of the 4-million babies born in the u.s. each year, totaling $20-billion per year, multiplied by four years = $80-billion.",1,0,0.4742383062839508,liar,100-200
+"it will cost $50,000 per enrollee in obamacare over the next 10 years.",1,0,0.4155162870883941,liar,50-100
+says that 9 million to 50 million undocumented immigrants live in the united states.,1,0,0.316571831703186,liar,50-100
+florida has experienced positive job growth for 39 consecutive months.,1,0,0.2165901064872741,liar,50-100
+"in early voting in miami-dade county, there is a trickle of two or three people a day at a very high cost to keep those public libraries and polls open.",1,0,0.3087603449821472,liar,100-200
+a yougov.com poll shows 71 percent of obama voters regret voting for him.,1,0,0.365890622138977,liar,50-100
+"(mary) burke was a senior member of the doyle administration that left wisconsin with 130,000 fewer jobs.",1,0,0.4853473901748657,liar,100-200
+"since 1978, california has spent $5 billion to put 13 people to death.",1,0,0.2937117218971252,liar,50-100
+state legislators quietly shifted $2 billion from education to road building in 2013.,1,0,0.4442714750766754,liar,50-100
+"with 320,000 net ohio manufacturing jobs lost, (sen. rob) portman calls nafta a proven success.",1,0,0.4293639957904815,liar,50-100
+"the 90 percent statistic ofsupporting background checks, thats been debunked.",1,0,0.3586185276508331,liar,50-100
+says texas schools have had massive increases in class sizes with rick perry as governor.,1,0,0.3316185176372528,liar,50-100
+we spend less on defense today as % of gdp than at any time since pearl harbor.,1,0,0.2784384191036224,liar,50-100
+jim dunnam has not lived in the district he represents for years now.,1,0,0.3737739622592926,liar,50-100
+we have never gone a year in virginia -- ever -- without passing a budget -- ever.,1,0,0.3639455139636993,liar,50-100
+says florida had five sanctuary cities while jeb bush was governor.,1,0,0.4112172126770019,liar,50-100
+president obama has the lowest public approval ratings of any president in modern times.,1,0,0.4967903792858124,liar,50-100
+"says the united states has treaties with apparently 69 countries where we are obligated to defend their borders. and these were treaties that were executive treaties, not authorized by congress.",1,0,0.3770889639854431,liar,100-200
+state pension fund staffers lost billions. then sink gave them bonuses.,1,0,0.4876062572002411,liar,50-100
+"in 2012, 1 in 4 wisconsin schools had a subpar score on the department of public instructions recent report cards and are failing the children they serve.",1,0,0.311465710401535,liar,100-200
+the southern baptist convention voted 13 years ago that women were inferior and had to be subservient to their husbands.,1,0,0.402393490076065,liar,100-200
+demand for public transportation is reaching record levels in wisconsin.,1,0,0.3869260847568512,liar,50-100
+were the most highly taxed nation in the world.,1,0,0.3856799900531769,liar,0-50
+a study ranked florida no. 1 in government corruption under gov. rick scott.,1,0,0.3454721868038177,liar,50-100
+democrats in congress had control since january of 2007. they haven't passed a law making waterboarding illegal. they haven't gone into any of these things and changed law.,1,0,0.4447263777256012,liar,100-200
+the average age of first marijuana use is 12.,1,0,0.3383073508739471,liar,0-50
+"even when all other state agencies took cuts, gov. [nathan] deal increased education spending every year.",1,0,0.3801912069320678,liar,100-200
+richmond is the most vegan-friendly city.,1,0,0.4939899444580078,liar,0-50
+the total unemployment rate for hispanic or latino workers has increased from 10% to 10.3% between january 2009 and march 2012.,1,0,0.260528951883316,liar,100-200
+the senate immigration bill unleashes a massive increase in overall immigration. were talking about a population increase under the senate bill of over 70 million people in 20 years.,1,0,0.4524294734001159,liar,100-200
+tampa bay isleading the state in jobs creation.,1,0,0.3964996635913849,liar,0-50
+"members of congress passed a pay raise for themselves of $10,000 over two years even as they voted not to raise social security benefits for 2010 and 2011.",1,0,0.4809217154979706,liar,100-200
+the islamic state just built a hotel in syria.,1,0,0.4585615992546081,liar,0-50
+"saystheres 400,000 anchor babies born in the united states a year, which areindividuals coming to our country and having their children so their children can be u.s. citizens.",1,0,0.3573306202888489,liar,100-200
+the size of our federal government has more than doubled since the year 2000.,1,0,0.2993212342262268,liar,50-100
+"the big wall street banks, the big corporations give many times more political donations to democrats than republicans.",1,0,0.4549436867237091,liar,100-200
+over 81 percent of the babies that are born at lbj hospital right here in houston are born of women who are not here legally.,1,0,0.2923781871795654,liar,100-200
+amanda murphy has two vacation homes around the world.,1,0,0.4447868168354034,liar,50-100
+were taxing our small businesses now at rates higher than corporations.,1,0,0.3348143398761749,liar,50-100
+says a national coca-cola study showed texans love texas more than residents of any other state love their state; wisconsinites ranked second.,1,0,0.3760623931884765,liar,100-200
+a poll taken a few months ago found 70 percent approval or higher for the act 10 collective bargaining law.,1,0,0.297001451253891,liar,100-200
+"after the 2012 redistricting, wisconsin has competitive congressional districts.",1,0,0.4420738220214844,liar,50-100
+says texas is the only state that exempts jet fuel from its state motor fuels tax.,1,0,0.4137843549251556,liar,50-100
+"middle-class families throughout america (would) have to pay $6,000 per year to pay for tax cuts for the wealthy.",1,0,0.3223797380924225,liar,100-200
+i also voted 98 percent of the time with republicans in the oregon legislature.,1,0,0.3130393028259277,liar,50-100
+there have been 30 published polls in this election cycle and harry reids been trailing in every single one.,1,0,0.3593193888664245,liar,100-200
+"a few months into office, (president barack obama) traveled around the globe to apologize for america.",1,0,0.4890477061271667,liar,100-200
+says only about 2 percent of gunsales in virginia are not subject to background checks.,1,0,0.314745545387268,liar,50-100
+says in the last five years senate republicans have placed a filibuster on every piece of legislation and every nominee.,1,0,0.3821902871131897,liar,100-200
+the state of rhode island has the worst state-funded pension in the country.,1,0,0.3578935265541076,liar,50-100
+says five studies show his tax plan can cut rates and still bring the same revenue without raising taxes on the middle class.,1,0,0.3686878979206085,liar,100-200
+you cant pass a budget in the senate of the united states without 60 votes.,1,0,0.40808966755867,liar,50-100
+"were spending tremendous amounts of money to educate our kids. in the world, were no. 1 per pupil by a factor of four.",1,0,0.3541875779628753,liar,100-200
+mitchell international airport is the the third busiest airport in the world and the number one busiest in the country.,1,0,0.3226922154426574,liar,100-200
+"a proposed revenue smart cap gives floridians a voice, requiring a 60 percent vote by citizens in order to impose a new tax, fee, license, fine, charge or assessment.",1,0,0.4016808569431305,liar,100-200
+florida has the second-lowest (campaign) contribution limit in the entire country.,1,0,0.3125035464763641,liar,50-100
+says dow chemical decided to build a plant in saudi arabia rather than oklahoma due to the impact of environmental regulations on the supply of natural gas.,1,0,0.4742089211940765,liar,100-200
+mitt romney has 15 homes.,1,0,0.4032055735588074,liar,0-50
+a new college tuition reciprocity agreement with minnesota makes college education more affordable for wisconsin residents.,1,0,0.3706427216529846,liar,100-200
+74 percent of republicans support the affordable care act.,1,0,0.3729138374328613,liar,50-100
+"ninety percent of the people who work in this country work for companies under 100 people, maybe even less than that.",1,0,0.2117597311735153,liar,100-200
+the state government workforce grew when tim kaine was governor.,1,0,0.4532780051231384,liar,50-100
+florida students take an array of standardized high stakes tests which eat up as much as 45 school days per year.,1,0,0.2828826010227203,liar,100-200
+milwaukees problems include 52 percent black male unemployment.,1,0,0.3115288615226745,liar,50-100
+jules bailey was instrumental in creating the business energy tax credit that let companies like wal-mart profit by $11 million while costing the oregon general fund $33 million.,1,0,0.4542668163776397,liar,100-200
+"the entirety of north america -- canada, the united states and mexico -- theres more known reserves in those three countries than in russia and saudi arabia.",1,0,0.3024303019046783,liar,100-200
+weve got more revenue than we ever have.,1,0,0.2851271629333496,liar,0-50
+louie gohmert of texas blamed the mass shooting at a movie theater in colorado on the ongoing attacks on judeo-christian beliefs.,1,0,0.4661411046981811,liar,100-200
+with recent growth it is very clear that private-sector jobs have been doing fine.,1,0,0.4847965836524963,liar,50-100
+"in this judicial race, special interest groups have demanded money from me, in exchange for endorsement and support.",1,0,0.4891193211078644,liar,100-200
+"gov. scott walker (is) more than halfway to (his) 250,000 jobs goal.",1,0,0.4900390207767486,liar,50-100
+barack obama has written and co-sponsored more bills in three years than hillary clinton has in seven.,1,0,0.4838640093803406,liar,100-200
+eight million americans have dropped out of the work force since (barack) obama became president. ... the real unemployment rate is 19 percent.,1,0,0.2575740814208984,liar,100-200
+the debt is nearly $6 trillion more than when president obama was sworn into office.,1,0,0.3079617917537689,liar,50-100
+wisconsin ranks 48th out of all 50 states in venture capital investment.,1,0,0.3050198554992676,liar,50-100
+"of all the illegals in america, more than half come through arizona.",1,0,0.326968103647232,liar,50-100
+"in the past six years alone, changes to the pension formula have saved over half a billion dollars.",1,0,0.2998605072498321,liar,50-100
+"weve had examples like in yuma county, where weve been able to stop 97 percent of the illegal (immigration) flow, and those programs, they abolish.",1,0,0.4583349823951721,liar,100-200
+"the democrat majority in the senate has failed to submit [a] budget in the past 1,000 days.",1,0,0.4943471252918243,liar,50-100
+we have spent $350 million to deal with sea-level rise in the miami area and hundreds of millions of dollars to deal with coral reefs.,1,0,0.2994333505630493,liar,100-200
+seventy percent of the people in the state of new jersey want marriage equality.,1,0,0.2750081121921539,liar,50-100
+"says her congressional district has 10,000 medical-device industry jobs and 1,000 will be lost because of health-care law tax.",1,0,0.415998637676239,liar,100-200
+"says state rep. patrick rose votes 90 percent with liberals, backed the states largest tax increase, proposed nearly $15 billion in government spending and supported obama-style government-run health care system for texas.",1,0,0.3745178580284118,liar,200-500
+"i have cut taxes 63 times, including a 2006 property tax reduction that ranks as the largest in state history.",1,0,0.2936932444572449,liar,100-200
+mequon and milwaukee have the highest disparity of income in the country.,1,0,0.3392142951488495,liar,50-100
+says there are more federal dollars in gov. john kasichs budget plan than in the previous state budget.,1,0,0.3606619536876678,liar,100-200
+"iowa has the fourth fastest-growing personal income in the united states, while nationally, the real wage has decreased over the past eight years that congressman (bruce) braley has been there by 2.7 percent.",1,0,0.2292406111955642,liar,200-500
+half of children struck by cars near schools are hit by parents driving children to school.,1,0,0.3446595668792724,liar,50-100
+"it took obama six months to pick out a family dog, but he's cramming health care reform down the country's throat in a fraction of that time.",1,0,0.4947205185890198,liar,100-200
+far more children died last year drowning in their bathtubs than were killed accidentally by guns.,1,0,0.2723628282546997,liar,50-100
+six thousand people have sought addiction treatment through expanded medicaid.,1,0,0.4024463593959808,liar,50-100
+"the departments of commerce, education and energy and the epa saw their spending increase by between 130 percent and 219 percent between 2008 and 2010.",1,0,0.3392714262008667,liar,100-200
+"chile ranks third internationally in economic freedom, while the u.s. ranks 17th.",1,0,0.3196832537651062,liar,50-100
+"the reality is, with a $2 trillion-a-year health care budget, we're spending more on health care, nearly 17 percent of our gross domestic product, versus 3.8 percent of gdp on the entire military budget.",1,0,0.4056552350521087,liar,200-500
+there is a growing body of evidence that radiation in excess of what the government says are the minimum amounts you should be exposed to are actually good for you and reduce cases of cancer.,1,0,0.4645334184169769,liar,100-200
+"in 45 out of 50 states, on average men are seeing their premiums double, going up 99 percent. women up 62 percent.",1,0,0.2552323043346405,liar,100-200
+we have more people working in the state of new jersey today than weve ever had in our history.,1,0,0.299274206161499,liar,50-100
+"a little-known unit of the department of justice, the community relations service, was deployed to sanford, fl, following the trayvon martin shooting to help organize and manage rallies and protests against george zimmerman.",1,0,0.4731503427028656,liar,200-500
+oregon is spending $10 million advertising obamacare with ads that dont even mention the program and how to enroll in it and that dont mention the word insurance.,1,0,0.4093263745307922,liar,100-200
+only five texas counties account for almost 90 percent of the (states) cattle industry.,1,0,0.250688374042511,liar,50-100
+i've traveled the country advocating for the fairtax ...,1,0,0.4697217941284179,liar,50-100
+unemployment and the housing and auto industry crises can be fixed by giving a million dollars to every worker over age 50 to retire.,1,0,0.314879834651947,liar,100-200
+"when sacs came back to the dekalb county school district to give a midterm review, we got straight as.",1,0,0.4915381073951721,liar,100-200
+austin mayoral candidate steve adler has never been active in anything that has to do with city hall.,1,0,0.4884637296199798,liar,100-200
+social security took seven years before anybody got the first check.,1,0,0.4484147131443023,liar,50-100
+gonzales losing campaign against me last spring was funded with more than $1 million from supporters and allies of governor bruce rauner.,1,0,0.3183099031448364,liar,100-200
+says most texas schools spend 45 out of 180 school days in mandated testing.,1,0,0.289241075515747,liar,50-100
+the debt comes up all the time in town meetings ... but its never asked in the debates. its really weird. it hasnt been brought up.,1,0,0.3750508725643158,liar,100-200
+heres something that people never talk about with coach schiano: rutgers had the best graduation rate of any division i football program in america.,1,0,0.4136270880699157,liar,100-200
+"obama ... gave almost a million dollars to the (kenya) opposition campaign who just happened to be his cousin, raila odinga.",1,0,0.4131343066692352,liar,100-200
+"the keystone oil pipeline would employ 20,000 people in the united states.",1,0,0.4303776919841766,liar,50-100
+says texas school systems lose 45 days a year on testing.,1,0,0.3358414769172668,liar,50-100
+"a study says massachusetts has lost 18,000 jobs because residents were required to obtain health insurance under an act signed into law by mitt romney.",1,0,0.3725800216197967,liar,100-200
+health care premiums up 90 percent in new hampshire.,1,0,0.4122779965400696,liar,50-100
+says some austin school district classrooms lack electrical outlets.,1,0,0.4277249276638031,liar,50-100
+"thirty-seven percent of central falls retired police officers and firefighters are out on disability pensions; in most municipalities, about 5 percent of retirees collect disability pensions.",1,0,0.2619353532791137,liar,100-200
+"the working tax cut created over 40,000 new jobs in just the last four years.",1,0,0.3612017631530761,liar,50-100
+"in arizona, there are only one and a half (border patrol) agents per every 10 square miles.",1,0,0.3020535409450531,liar,50-100
+"the wic program is an incredibly cost effective program, serving nearly 10 million americans each year and costing less than $100 per person. in my district, more than 18 percent of residents suffer from food insecurity and depend on wic to make ends meet.",1,0,0.3177620768547058,liar,200-500
+saypresident george w. bush borrowed $1.37 trillion of social security surplus revenue to pay for his tax cuts for the rich and his war in iraq and never paid it back.,1,0,0.4988389611244201,liar,100-200
+the auto companies have now repaid taxpayers every dime and more of what my administration invested in.,1,0,0.3670557141304016,liar,100-200
+''i have received more contributions than any other candidate in the race republican or democrat.'',1,0,0.3580943048000335,liar,50-100
+says the simpson-bowles deficit reduction proposal urged raising $2 trillion in new revenue.,1,0,0.4881760478019714,liar,50-100
+"after hurricane katrina, dallas and san antonio took in 5,000 to 10,000 refugees each, but (bill) white brought in 250,000 and put them up in his buddies empty apartment buildings and let the federal government pay their rents for over two years. they did not return to new orleans, most of them are on welfare.",1,0,0.3916890621185303,liar,200-500
+"phoenix, arizona, im told, is now the no. 2 kidnapping capital in the world, right behind mexico city.",1,0,0.4821523427963257,liar,100-200
+"state budget cuts for local schools resulted in nearly 4,000 educator layoffs",1,0,0.3095157742500305,liar,50-100
+says hillary clinton makes more per hour at a speaking gig than the average ceo does in a year.,1,0,0.4251155257225036,liar,50-100
+"the 2011 rebuild america jobs act would have cost the average american family $1,000 a year while making no significant impact to fix our infrastructure and roads.",1,0,0.3423372507095337,liar,100-200
+illegal immigration costs state taxpayers over $3 billion every year.,1,0,0.4693620800971985,liar,50-100
+"in florida, 300,000 people are going to lose their individual coverage because of obamacare. now those people next year, they dont have health insurance.",1,0,0.4539151787757873,liar,100-200
+half of all hospitalized seniors are suffering from malnutrition so severe that it either caused their illness or it prevents them from getting better.,1,0,0.3605064451694488,liar,100-200
+"according to the cdc, 110 million americans now have a sexually transmitted illness.",1,0,0.4202803075313568,liar,50-100
+governors proposed budget raids k-12 school funds to grow dhs again.,1,0,0.4608924984931946,liar,50-100
+only 2 percent of public high schools in the country offer pe classes.,1,0,0.2684947252273559,liar,50-100
+the amount of money that we put into running our own state legislature is nearly as much as we put into the university of rhode island.,1,0,0.3980386555194855,liar,100-200
+"in states where beer is unregulated, the per capita production is significantly higher.",1,0,0.3009596168994903,liar,50-100
+we were promised. the president said we would keep unemployment under 8.5 percent (if the stimulus passed).,1,0,0.4878707826137543,liar,100-200
+a substantial number of probationers participating in a pilot project to ease the farm labor shortage are able to finish the work.,1,0,0.4150578379631042,liar,100-200
+"hillary's main extracurricular activity in law school was helping the black panthers, on trial in connecticut for torturing and killing a federal agent.",1,0,0.4873924553394317,liar,100-200
+mark warners record is one of acting against the keystone xl pipeline.,1,0,0.4188419282436371,liar,50-100
+i started the whole year as a senior on the university of illinois football team and led the team in interceptions and tackles from defensive back.,1,0,0.2874107956886291,liar,100-200
+says one of the states largest governments made charging this tax one of their top priorities just this year.,1,0,0.3654192090034485,liar,100-200
+mayor fung wants to punish our childrens education by removing 12 million dollars from current funding to pay for his private charter school. your taxes would increase by between 6 and 8 percent per year.,1,0,0.4892345368862152,liar,200-500
+our federal government has lent $2 billion to the state-owned oil company of brazil to allow them to explore for oil and gas.,1,0,0.4162167906761169,liar,100-200
+wisconsin women are paid 81 cents to the dollar of a man doing the same job.,1,0,0.3363437354564667,liar,50-100
+"since being elected, (tom barrett) has dumped 8.2 billion gallons of raw sewage into lake michigan.",1,0,0.2914100587368011,liar,50-100
+millennials will be 75 percent of the workforce in the next 10 years.,1,0,0.2962686419486999,liar,50-100
+tim kaine made virginia the best state for business four years in a row.,1,0,0.3976248502731323,liar,50-100
+"thirty million americans, including a lot of people in florida, are going to be able to get healthcare next year because of that law.",1,0,0.3131968975067138,liar,100-200
+"republican (small business tax cut) bill spends $80 million for better google searches, not job creation",1,0,0.4665315747261047,liar,100-200
+the national unemployment rate has been above 8 percent for a record 36 months.,1,0,0.2901460230350494,liar,50-100
+i was pretty proud of being the only guy on the stage that ever had a job in the private sector.,1,0,0.4342612624168396,liar,50-100

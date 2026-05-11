@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score, precision_score, recall_score
@@ -14,3 +16,4 @@ def evaluate_predictions(df: pd.DataFrame, y_true: list[int], y_pred: list[int])
         "confusion_matrix": confusion_matrix(y_true, y_pred).tolist(),
         "count": len(df),
     }
+

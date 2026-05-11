@@ -1,4 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+
+
 
 import json
 from pathlib import Path
@@ -90,22 +92,47 @@ def _load_fakenewsnet_labeled_csv(fake_path: Path) -> pd.DataFrame:
 
 def _load_fakenewsnet_split_csvs(fake_dir: Path) -> pd.DataFrame:
     csv_files = list(fake_dir.glob("*.csv"))
-    split_csvs = [p for p in csv_files if any(k in p.stem.lower() for k in ["politifact", "gossipcop"]) and any(k in p.stem.lower() for k in ["fake", "real"])]
+    split_csvs = [
+        p for p in csv_files
+        if any(k in p.stem.lower() for k in ["politifact", "gossipcop", "buzzfeed"])
+        and any(k in p.stem.lower() for k in ["fake", "real"])
+    ]
     if not split_csvs:
         raise FileNotFoundError("No FakeNewsNet split CSV files found.")
 
+    pairs: dict[str, dict[str, Path]] = {}
+    for p in split_csvs:
+        stem = p.stem.lower()
+        if "fake" in stem:
+            source = stem.replace("_fake", "").replace("fake_", "").replace("fake", "")
+            pairs.setdefault(source, {})["fake"] = p
+        elif "real" in stem:
+            source = stem.replace("_real", "").replace("real_", "").replace("real", "")
+            pairs.setdefault(source, {})["real"] = p
+
     rows: list[dict] = []
-    for path in split_csvs:
-        stem = path.stem.lower()
-        label = "fake" if "fake" in stem else "real"
-        df = pd.read_csv(path)
-        text_series = _safe_text_column(df, ["text", "content", "article", "title"])
-        if text_series.str.len().sum() == 0:
-            title = _safe_text_column(df, ["title"])
-            body = _safe_text_column(df, ["body", "content"])
-            text_series = title + " " + body
-        for text in text_series.tolist():
-            rows.append({"text": text, "label": label})
+    for source, files in pairs.items():
+        fake_path = files.get("fake")
+        real_path = files.get("real")
+        if fake_path is None or real_path is None:
+            continue
+
+        fake_df = pd.read_csv(fake_path)
+        real_df = pd.read_csv(real_path)
+        if "text" in fake_df.columns and "text" in real_df.columns and len(fake_df) == len(real_df):
+            if fake_df["text"].fillna("").equals(real_df["text"].fillna("")):
+                print(f"Skipping duplicate FakeNewsNet pair '{source}' (fake==real)")
+                continue
+
+        for path, label in [(fake_path, "fake"), (real_path, "real")]:
+            df = pd.read_csv(path)
+            text_series = _safe_text_column(df, ["text", "content", "article", "title"])
+            if text_series.str.len().sum() == 0:
+                title = _safe_text_column(df, ["title"])
+                body = _safe_text_column(df, ["body", "content"])
+                text_series = title + " " + body
+            for text in text_series.tolist():
+                rows.append({"text": text, "label": label})
 
     merged = pd.DataFrame(rows)
     return _postprocess_dataset(merged, "fakenewsnet")
@@ -181,3 +208,4 @@ def build_unified_dataset(liar_path: Path, fake_path: Path) -> pd.DataFrame:
     unified = pd.concat([liar_df, fake_df], axis=0, ignore_index=True)
     unified = unified.drop_duplicates(subset=["text"])
     return unified
+
