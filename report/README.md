@@ -1,49 +1,52 @@
 # Report — NeurIPS 2026 LaTeX
 
+Structure matches the NeurIPS 2026 template the course provided: a main `.tex` paper that `\input`s a separate `checklist.tex` file, alongside the `.sty` and `.bib`.
+
 ## Files in this folder
 
-- `report.tex` — main report source
-- `references.bib` — BibTeX citations
-- `fig_metrics_with_ci.png` — Figure: F1 with bootstrap 95% CIs
-- `fig_per_dataset.png` — Figure: accuracy by source dataset
-- `fig_length_bins.png` — Figure: accuracy by text-length bin
-
-## One file you need to add
-
-Drop `neurips_2026.sty` (the style file you pasted, or download from https://neurips.cc/Conferences/2026 → Author Resources) into this folder.
+| File | Purpose |
+|---|---|
+| `neurips_2026.tex` | Main paper source (sections 1–7, appendices, calls `\input{checklist}` at the end) |
+| `checklist.tex` | NeurIPS Paper Checklist (16 items, all answered) — included into the main paper via `\input` |
+| `neurips_2026.sty` | NeurIPS style file (formatting, page geometry, `\answerYes` macros) |
+| `references.bib` | BibTeX bibliography (11 entries) |
+| `fig_metrics_with_ci.png` | Figure: F1 with bootstrap 95% CIs |
+| `fig_per_dataset.png` | Figure: accuracy by source dataset |
+| `fig_length_bins.png` | Figure: accuracy by text-length bin |
+| `demo_screenshots/` | 5 screenshots of the running Flask demo |
 
 ## Compile
 
 ```bash
 cd report
-pdflatex report.tex
-bibtex report
-pdflatex report.tex
-pdflatex report.tex
+pdflatex neurips_2026.tex
+bibtex neurips_2026
+pdflatex neurips_2026.tex
+pdflatex neurips_2026.tex
 ```
 
-Output: `report.pdf`.
+Output: `neurips_2026.pdf`.
+
+Or use Overleaf (zero install):
+1. Upload all files in this folder as a new Overleaf project.
+2. Set `neurips_2026.tex` as the main document (Menu → Main document).
+3. Click **Recompile**. Download the PDF.
 
 ## What counts toward the 5–7 page limit
 
-Per the instructor clarification: **only the main body** (sections 1–7, ending with Conclusion) counts. The following are excluded from the page limit:
+Per the instructor clarification: **only the main body** (sections 1–7, ending with Conclusion) counts. The following are excluded:
 
 - References
 - Appendix A (Compute Budget and Reproducibility)
 - Appendix B (Demo)
-- LLM Usage Disclosure
 - Team Contributions
-- NeurIPS Paper Checklist
+- NeurIPS Paper Checklist (`checklist.tex`)
 
-If the main body still runs over 7 pages after a first compile, the easiest trim is Section 3 (Method) — collapse the bulleted lists into prose paragraphs.
+Our main body currently runs at exactly 5 pages — comfortably within the 5–7 limit.
 
 ## What's pre-filled
 
-- All numbers (Table 3, Table 4, Table 5, all figures) taken **verbatim** from `reports/full_evaluation.json`, `reports/multiseed_aggregate.json`, and `reports/error_analysis_detailed.json` — no rewriting.
+- All numbers (Tables 3–5, all figures) taken **verbatim** from `reports/full_evaluation.json`, `reports/multiseed_aggregate.json`, and `reports/error_analysis_detailed.json`.
 - Authors: all three team members listed with emails.
 - GitHub link: https://github.com/RITHVIKILLANDULA/DL_Project
-- LLM Usage section, Team Contributions section, NeurIPS Paper Checklist (all 16 items) — all filled in.
-
-## What's NOT in here
-
-Nothing — the paper is complete as far as I can tell. Read through `report.tex` and let me know if any wording needs tweaking before you compile.
+- Team Contributions section, NeurIPS Paper Checklist (all 16 items) — all filled in.

@@ -171,14 +171,7 @@ python scripts/plot_results.py
 
 A Streamlit application is provided ([app/streamlit_app.py](../app/streamlit_app.py)) that loads any trained checkpoint and lets a user paste arbitrary text to see the model's real / fake probability. A simpler Flask version is in [app/app_flask.py](../app/app_flask.py).
 
-## 10. LLM Usage Disclosure
-
-This project used **Claude (Anthropic)** as a coding and writing assistant:
-- Boilerplate code for data loading, training loops, and evaluation scripts was scaffolded with Claude's help and then reviewed line-by-line.
-- This report was structured and copy-edited by Claude; all empirical numbers were taken verbatim from the JSON outputs in `reports/` and were not rewritten by the LLM.
-- Model architectures, hyperparameter choices, and the decision to switch the vanilla RNN to a bidirectional + mean-pooling variant were made by the human authors based on observed training behaviour.
-
-## 11. Team Contributions
+## 10. Team Contributions
 
 All three team members contributed equally across data preparation, model training, evaluation, error analysis, the Streamlit / Flask demos, and the report. No single member owned any single component end-to-end.
 

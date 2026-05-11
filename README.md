@@ -147,6 +147,3 @@ Point it at a checkpoint (e.g., `models/classic_lstm/best_lstm.pt` or `models/be
 - CPU-only execution is supported; training times listed in [reports/final_report.md §8](reports/final_report.md).
 - Library code is in `src/fake_news/`; CLI scripts in `scripts/`.
 
-## 9) LLM Usage
-
-Coding and writing assistance was provided by Claude (Anthropic). All empirical numbers were taken verbatim from the JSON outputs in `reports/` and were not rewritten by the model. See §10 of the final report for full disclosure.

@@ -1,0 +1,85 @@
+\section*{NeurIPS Paper Checklist}
+
+\begin{enumerate}
+
+\item {\bf Claims}
+    \item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The abstract states the three contributions (fair four-way comparison on unified LIAR+FakeNewsNet with bootstrap CIs, BiRNN mean-pooling + gradient-clipping architectural fix, per-dataset and length-bin error analysis) and Section~4 reports the exact numbers backing each claim, with bootstrap 95\% CIs in Table~\ref{tab:overall} and 3-seed mean$\pm$std in Table~\ref{tab:multiseed}.
+
+\item {\bf Limitations}
+    \item[] Question: Does the paper discuss the limitations of the work performed by the authors?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~6 lists five explicit limitations: small FakeNewsNet test slice ($n=22$), lossy 6-to-2 LIAR label mapping, \texttt{max\_len} truncation on the recurrent models and DistilBERT, single-seed DistilBERT, and DistilBERT overfitting after epoch~2.
+
+\item {\bf Theory assumptions and proofs}
+    \item[] Question: For each theoretical result, does the paper provide the full set of assumptions and a complete (and correct) proof?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The paper is purely empirical; no theoretical results or proofs are claimed.
+
+\item {\bf Experimental result reproducibility}
+    \item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper to the extent that it affects the main claims and/or conclusions of the paper (regardless of whether the code and data are provided or not)?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Appendix~\ref{app:compute} lists the exact CLI invocations for every step (data prep, four model trainings, prediction, evaluation, error analysis, multi-seed); Section~3 reports all hyperparameters in Table~\ref{tab:hyperparams} and the architectural choices in Section~3.3; the full pipeline is open-sourced at the GitHub URL in the abstract.
+
+\item {\bf Open access to data and code}
+    \item[] Question: Does the paper provide open access to the data and code, with sufficient instructions to faithfully reproduce the main experimental results, as described in supplemental material?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: All source code is in the public repository at \url{https://github.com/RITHVIKILLANDULA/DL_Project}. Raw data is fetched from public Kaggle datasets (\texttt{doanquanvietnamca/liar-dataset} and \texttt{mdepak/fakenewsnet}) via the documented \texttt{kagglehub} commands in the repository \texttt{README.md}. The trained DistilBERT checkpoint is attached to release \texttt{v1.0-models}.
+
+\item {\bf Experimental setting/details}
+    \item[] Question: Does the paper specify all the training and test details (e.g., data splits, hyperparameters, how they were chosen, type of optimizer) necessary to understand the results?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~3.1 describes the stratified 80/10/10 split and the leakage-free dedup; Table~\ref{tab:hyperparams} gives the full hyperparameter table (LR, weight decay, batch size, max length, epochs, gradient clip, class weights) for all three neural models; Section~3.3--3.4 specifies the architectures and the AdamW optimizer.
+
+\item {\bf Experiment statistical significance}
+    \item[] Question: Does the paper report error bars suitably and correctly defined or other appropriate information about the statistical significance of the experiments?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~4.1 reports 1{,}000-sample bootstrap 95\% percentile-method confidence intervals on F1 for every model (Table~\ref{tab:overall}). Section~4.2 reports 3-seed mean$\pm$std for BiRNN and BiLSTM (Table~\ref{tab:multiseed}). The factors of variability are (a) test-set sampling (CIs) and (b) optimisation seed (multi-seed std).
+
+\item {\bf Experiments compute resources}
+    \item[] Question: For each experiment, does the paper provide sufficient information on the computer resources (type of compute workers, memory, time of execution) needed to reproduce the experiments?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Appendix~\ref{app:compute} documents the 8-core CPU machine (no GPU) and per-step wall-clock times: TF--IDF $\approx$10\,s, BiRNN $\approx$4\,min, BiLSTM $\approx$11\,min, DistilBERT $\approx$146\,min, 3-seed RNN+LSTM $\approx$45\,min, end-to-end pipeline $\approx$2.7\,hours.
+
+\item {\bf Code of ethics}
+    \item[] Question: Does the research conducted in the paper conform, in every respect, with the NeurIPS Code of Ethics \url{https://neurips.cc/public/EthicsGuidelines}?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The research uses only public datasets under their respective licences, involves no human subjects, and the misinformation-detection risks are explicitly discussed in Section~6 (Ethics).
+
+\item {\bf Broader impacts}
+    \item[] Question: Does the paper discuss both potential positive societal impacts and negative societal impacts of the work performed?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~6 discusses both: (positive) automated flagging of potentially false claims as an advisory signal for human moderation; (negative) low precision making downstream punitive use harmful, US-political distributional bias, and lack of adversarial robustness evaluation.
+
+\item {\bf Safeguards}
+    \item[] Question: Does the paper describe safeguards that have been put in place for responsible release of data or models that have a high risk for misuse (e.g., pre-trained language models, image generators, or scraped datasets)?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: We do not release a new dataset or a model with elevated dual-use risk; the trained checkpoints are derived from public LIAR + FakeNewsNet data and offer limited additional capability beyond existing public fake-news classifiers.
+
+\item {\bf Licenses for existing assets}
+    \item[] Question: Are the creators or original owners of assets (e.g., code, data, models), used in the paper, properly credited and are the license and terms of use explicitly mentioned and properly respected?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: We cite \citet{wang2017liar} (LIAR), \citet{shu2020fakenewsnet} (FakeNewsNet), \citet{pennington2014glove} (GloVe~6B), \citet{sanh2019distilbert} (DistilBERT), and the supporting libraries \citet{wolf2020transformers} (Transformers) and PyTorch/scikit-learn; all assets are used under their non-commercial / research-permitted terms.
+
+\item {\bf New assets}
+    \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: We do not release new datasets. Code and trained checkpoints are released on the GitHub repository with a \texttt{README.md} documenting reproduction steps and a \texttt{download\_trained\_models.py} helper script for the DistilBERT weights hosted on the GitHub release.
+
+\item {\bf Crowdsourcing and research with human subjects}
+    \item[] Question: For crowdsourcing experiments and research with human subjects, does the paper include the full text of instructions given to participants and screenshots, if applicable, as well as details about compensation (if any)?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The research involves no crowdsourcing or human subjects.
+
+\item {\bf Institutional review board (IRB) approvals or equivalent for research with human subjects}
+    \item[] Question: Does the paper describe potential risks incurred by study participants, whether such risks were disclosed to the subjects, and whether Institutional Review Board (IRB) approvals (or an equivalent approval/review based on the requirements of your country or institution) were obtained?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: No human subjects are involved; IRB approval is not applicable.
+
+\item {\bf Declaration of LLM usage}
+    \item[] Question: Does the paper describe the usage of LLMs if it is an important, original, or non-standard component of the core methods in this research? Note that if the LLM is used only for writing, editing, or formatting purposes and does \emph{not} impact the core methodology, scientific rigor, or originality of the research, declaration is not required.
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The core method development in this research does not involve LLMs as any important, original, or non-standard component.
+
+\end{enumerate}
