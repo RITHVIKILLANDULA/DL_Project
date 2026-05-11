@@ -29,6 +29,20 @@ pip install kagglehub
 set PYTHONIOENCODING=utf-8
 ```
 
+### Trained DistilBERT weights (one-time download)
+
+The DistilBERT checkpoint `models/best_transformer/model.safetensors` (~256 MB) exceeds GitHub's 100 MB per-file limit and is hosted as a release asset. All other model files (the small RNN/LSTM/baseline checkpoints, plus the DistilBERT config + tokenizer JSONs) are committed directly to the repo.
+
+To fetch the DistilBERT weights:
+
+```bash
+python scripts/download_trained_models.py
+```
+
+Or download manually from https://github.com/RITHVIKILLANDULA/DL_Project/releases/tag/v1.0-models and place `model.safetensors` into `models/best_transformer/`.
+
+GloVe 6B 100d (~330 MB) is also large and not committed; it is auto-downloaded from Stanford's official URL by `src/fake_news/embeddings.py` on first use.
+
 ## 3) Download datasets via kagglehub
 
 ```python

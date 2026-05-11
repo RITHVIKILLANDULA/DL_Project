@@ -223,6 +223,8 @@ A pretrained Transformer (DistilBERT) is the right architectural choice for full
 
 All experiments ran on a single 8-core CPU machine (no GPU). Wall-clock times: TF--IDF $\approx$10\,s; BiRNN ($10$ epochs) $\approx$4\,min; BiLSTM ($12$ epochs) $\approx$11\,min; DistilBERT ($4$ epochs, early-stopped) $\approx$146\,min; 3-seed RNN+LSTM $\approx$45\,min total. End-to-end pipeline (excluding multi-seed runs) $\approx$2.7\,hours.
 
+\paragraph{Trained checkpoints.} All small model checkpoints (TF--IDF + LogReg, BiRNN seeds, BiLSTM seeds) are committed under \texttt{models/} in the GitHub repository. The DistilBERT weights file (\texttt{model.safetensors}, $\approx$256\,MB) exceeds GitHub's 100\,MB per-file limit and is hosted as a release asset at \url{https://github.com/RITHVIKILLANDULA/DL_Project/releases/tag/v1.0-models}; running \texttt{python scripts/download\_trained\_models.py} fetches it into the correct path. GloVe 6B 100d ($\approx$330\,MB) is auto-downloaded from Stanford's official URL by \texttt{src/fake\_news/embeddings.py} on first use.
+
 The full pipeline is reproducible via the CLI invocations in the repository's \texttt{README.md}:
 
 \begin{verbatim}
