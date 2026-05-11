@@ -13,14 +13,14 @@ __pycache__/
 # Claude Code agent state
 .claude/
 
-# Trained model checkpoints (too large for git; regenerate via scripts/train_*.py)
-models/
+# Trained model checkpoints (only the DistilBERT safetensors is too large for git;
+# small RNN/LSTM/baseline checkpoints are committed. DistilBERT goes in a GitHub Release).
+models/best_transformer/model.safetensors
+models/best_transformer_subsample_backup/
 
-# Raw datasets (fetch via kagglehub; see README)
-data/raw/
-
-# Generated train/val/test splits (regenerate via scripts/prepare_data.py)
-data/processed/
+# GloVe embeddings (~330 MB; auto-downloaded by src/fake_news/embeddings.py)
+data/raw/glove_embeddings/
+data/raw/glove.6B.zip
 
 # Training logs (verbose, regenerate by retraining)
 reports/*.log
@@ -29,6 +29,6 @@ reports/*.log
 .DS_Store
 Thumbs.db
 
-# Temp dirs that should never be in repo
+# Temp dirs
 .tmp_fakenewsnet/
 tmp_fakenewsnet_old/
